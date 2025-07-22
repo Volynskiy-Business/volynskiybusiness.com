@@ -1,98 +1,619 @@
-<!-- /html/privacy-policy.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy | Michael Volynskiy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Service - Volynskiy Business Automation. Our terms and conditions for using our AI automation services.">
+    <title>Terms of Service - Volynskiy Business Automation</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Antique Frame Styling */
+        .document-frame {
+            background: #fefefe;
+            border: 20px solid #8b4513;
+            border-image: linear-gradient(45deg, #8b4513, #cd853f, #daa520, #cd853f, #8b4513) 1;
+            box-shadow: 
+                inset 0 0 0 5px #f4f4f4,
+                inset 0 0 0 10px #8b4513,
+                0 0 30px rgba(0,0,0,0.3),
+                0 0 60px rgba(139,69,19,0.2);
+            position: relative;
+            padding: 3rem;
+            margin: 2rem 0;
+            border-radius: 15px;
+        }
+        
+        .document-frame::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(45deg, #8b4513, #cd853f, #daa520, #cd853f, #8b4513);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        
+        .document-frame::after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border: 2px solid #cd853f;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+        
+        /* Header Styling */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 3px double #8b4513;
+            position: relative;
+        }
+        
+        .header::after {
+            content: '⚖️';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fefefe;
+            padding: 0 15px;
+            font-size: 1.5rem;
+        }
+        
+        .document-title {
+            font-size: 3rem;
+            color: #8b4513;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        
+        .document-subtitle {
+            font-size: 1.2rem;
+            color: #5d4e37;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .effective-date {
+            font-size: 1rem;
+            color: #8b4513;
+            font-weight: bold;
+            background: linear-gradient(135deg, #f4f4f4, #e8e8e8);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            border: 1px solid #cd853f;
+        }
+        
+        /* Navigation */
+        .nav-bar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .nav-logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            transition: background 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        /* Content Styling */
+        .section {
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+        
+        .section-number {
+            position: absolute;
+            left: -1.5rem;
+            top: 0.5rem;
+            width: 2rem;
+            height: 2rem;
+            background: linear-gradient(135deg, #8b4513, #cd853f);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #8b4513;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 4px solid #cd853f;
+            font-weight: bold;
+        }
+        
+        .section-content {
+            background: linear-gradient(135deg, #fafafa, #f0f0f0);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .section-content p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            font-size: 1rem;
+        }
+        
+        .section-content ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+        
+        .section-content li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        
+        .section-content li::marker {
+            color: #8b4513;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            border: 2px solid #f39c12;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            position: relative;
+        }
+        
+        .highlight-box::before {
+            content: '⚠️';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: #fff3cd;
+            padding: 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        .important-box {
+            background: linear-gradient(135deg, #ffebee, #ffcdd2);
+            border: 2px solid #f44336;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            position: relative;
+        }
+        
+        .important-box::before {
+            content: '❗';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: #ffebee;
+            padding: 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+            border: 2px solid #4caf50;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .contact-info h3 {
+            color: #2e7d32;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info p {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #1b5e20;
+        }
+        
+        /* Decorative Elements */
+        .ornament {
+            text-align: center;
+            font-size: 2rem;
+            color: #8b4513;
+            margin: 2rem 0;
+        }
+        
+        .divider {
+            height: 3px;
+            background: linear-gradient(to right, transparent, #8b4513, #cd853f, #8b4513, transparent);
+            margin: 2rem 0;
+            border-radius: 2px;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 3px double #8b4513;
+            color: #5d4e37;
+            font-style: italic;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .document-frame {
+                border-width: 15px;
+                padding: 2rem;
+                margin: 1rem 0;
+            }
+            
+            .document-title {
+                font-size: 2.2rem;
+            }
+            
+            .nav-content {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .section-number {
+                position: static;
+                margin-bottom: 1rem;
+                margin-left: 0;
+            }
+            
+            .section-title {
+                padding-left: 0;
+                border-left: none;
+                border-bottom: 2px solid #cd853f;
+                padding-bottom: 0.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <main style="max-width:720px;margin:2rem auto;padding:1rem;">
-    <h1>Privacy Policy</h1>
-    <p><strong>Effective date:</strong> 22 July 2025</p>
-    <p><strong>Owner:</strong> Michael Volynskiy<br>
-    <strong>Email:</strong> <a href="mailto:info@volynskiybusiness.com">info@volynskiybusiness.com</a></p>
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <a href="/" class="nav-logo">AI Solutions</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/#services">Services</a>
+                <a href="/#contact">Contact</a>
+                <a href="/privacy-policy/">Privacy</a>
+            </div>
+        </div>
+    </nav>
 
-    <h2>1. General Provisions</h2>
-    <p>
-      This Privacy Policy (“Policy”) describes how Michael Volynskiy (“we”, “us”, “our”) collects, uses, and protects your personal data as a user (“you”) of the website <a href="http://volynskiybusiness.com">volynskiybusiness.com</a> and our services, including communications via WhatsApp Business API. We process your data in accordance with the General Data Protection Regulation (GDPR), CCPA, and local laws.
-    </p>
+    <div class="container">
+        <div class="document-frame">
+            <div class="header">
+                <h1 class="document-title">Terms of Service</h1>
+                <p class="document-subtitle">Agreement for AI Automation Services</p>
+                <div class="effective-date">Effective Date: July 22, 2025</div>
+            </div>
 
-    <h2>2. Collection and Use of Personal Data</h2>
-    <p>
-      We may collect the following personal data:
-      <ul>
-        <li>Full name</li>
-        <li>Email address</li>
-        <li>Physical address</li>
-        <li>Any data you provide via web forms or WhatsApp messages</li>
-      </ul>
-      <strong>Purposes:</strong>
-      <ul>
-        <li>Processing orders and inquiries</li>
-        <li>Customer communication</li>
-        <li>Sending updates, notifications, and marketing offers</li>
-        <li>Improvement of our services</li>
-        <li>Compliance with legal requirements</li>
-      </ul>
-      <strong>Methods of collection:</strong> Forms on the website, WhatsApp correspondence, email, and phone calls.
-    </p>
+            <div class="section">
+                <div class="section-number">1</div>
+                <h2 class="section-title">Acceptance of Terms</h2>
+                <div class="section-content">
+                    <p>By accessing and using the services provided by <strong>Michael Volynskiy</strong> operating under <strong>Volynskiy Business Automation</strong> ("we", "us", "our"), you ("Client", "you", "your") agree to be bound by these Terms of Service ("Terms").</p>
+                    
+                    <div class="important-box">
+                        <p><strong>Important:</strong> If you do not agree to these terms, please do not use our services. Your continued use of our services constitutes acceptance of any updates to these terms.</p>
+                    </div>
+                    
+                    <p>These Terms govern your use of our AI automation services, including AI assistants, agents, chatbots, and related business automation solutions.</p>
+                </div>
+            </div>
 
-    <h2>3. Consent to Newsletters and Notifications</h2>
-    <p>
-      By providing your contact details, you consent to receive notifications about new products, services, special offers, and events via the WhatsApp Business API.<br>
-      <strong>You may opt out at any time:</strong>
-      <ul>
-        <li>Send an email to <a href="mailto:info@volynskiybusiness.com">info@volynskiybusiness.com</a> with the subject “Opt out of notifications”</li>
-        <li>Or send the message “STOP” in our WhatsApp chat</li>
-      </ul>
-    </p>
+            <div class="ornament">⚖️ ⚖️ ⚖️</div>
 
-    <h2>4. WhatsApp Business API Data Processing</h2>
-    <p>
-      We use the WhatsApp Business API to communicate with customers. All messages are processed according to <a href="https://www.facebook.com/business/help/2058515294227817" target="_blank">Meta’s policy</a>. You have the right to request modification or deletion of your data at any time.
-    </p>
+            <div class="section">
+                <div class="section-number">2</div>
+                <h2 class="section-title">Service Description</h2>
+                <div class="section-content">
+                    <p>We provide comprehensive AI automation solutions including:</p>
+                    <ul>
+                        <li><strong>AI Assistants</strong> - Intelligent virtual assistants for customer support</li>
+                        <li><strong>AI Agents</strong> - Autonomous systems for business process automation</li>
+                        <li><strong>Smart Chatbots</strong> - Conversational AI for customer engagement</li>
+                        <li><strong>Business Automation</strong> - End-to-end workflow optimization</li>
+                        <li><strong>Custom Integration</strong> - Tailored solutions for your business needs</li>
+                        <li><strong>Analytics & Reporting</strong> - AI-powered insights and performance metrics</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <h4>Service Availability:</h4>
+                        <p>Our services are provided on a best-effort basis. While we strive for 99.9% uptime, we cannot guarantee uninterrupted service due to maintenance, updates, or unforeseen circumstances.</p>
+                    </div>
+                </div>
+            </div>
 
-    <h2>5. Transfer of Data to Third Parties</h2>
-    <p>
-      Personal data may be transferred to third parties only as necessary for fulfilling our obligations (such as payment or delivery services) or as required by law. All third parties are required to protect your data in accordance with applicable laws.
-    </p>
+            <div class="section">
+                <div class="section-number">3</div>
+                <h2 class="section-title">Client Responsibilities</h2>
+                <div class="section-content">
+                    <p>As a client, you agree to:</p>
+                    <ul>
+                        <li>Provide accurate and complete information for service setup</li>
+                        <li>Maintain the confidentiality of your account credentials</li>
+                        <li>Use our services in compliance with applicable laws and regulations</li>
+                        <li>Not attempt to reverse engineer, modify, or distribute our AI systems</li>
+                        <li>Promptly notify us of any security breaches or unauthorized access</li>
+                        <li>Provide necessary access to your systems for integration purposes</li>
+                    </ul>
+                    
+                    <div class="important-box">
+                        <h4>Prohibited Uses:</h4>
+                        <ul>
+                            <li>Illegal activities or violation of any laws</li>
+                            <li>Harassment, abuse, or harmful content generation</li>
+                            <li>Attempting to compromise system security</li>
+                            <li>Reselling or redistributing our services without permission</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-    <h2>6. Data Security</h2>
-    <p>
-      We implement appropriate technical and organizational measures to protect your data, including encryption, secure storage, and access controls. If a data breach occurs, we will notify affected users and authorities as required by law.
-    </p>
+            <div class="divider"></div>
 
-    <h2>7. Rights of Data Subjects</h2>
-    <p>
-      You have the right to:
-      <ul>
-        <li>Access your data</li>
-        <li>Rectify inaccurate data</li>
-        <li>Request deletion (“right to be forgotten”)</li>
-        <li>Restrict processing</li>
-        <li>Withdraw consent at any time</li>
-      </ul>
-      To exercise your rights, please contact <a href="mailto:info@volynskiybusiness.com">info@volynskiybusiness.com</a>.
-    </p>
+            <div class="section">
+                <div class="section-number">4</div>
+                <h2 class="section-title">Payment Terms</h2>
+                <div class="section-content">
+                    <p>Payment terms are established in your service agreement and may include:</p>
+                    <ul>
+                        <li><strong>Setup Fees</strong> - One-time charges for initial configuration</li>
+                        <li><strong>Monthly Subscriptions</strong> - Recurring charges for ongoing services</li>
+                        <li><strong>Usage-Based Fees</strong> - Charges based on API calls, messages, or interactions</li>
+                        <li><strong>Custom Development</strong> - Project-based pricing for bespoke solutions</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <h4>Payment Schedule:</h4>
+                        <ul>
+                            <li>Setup fees are due before service activation</li>
+                            <li>Monthly fees are billed in advance</li>
+                            <li>Usage fees are billed monthly in arrears</li>
+                            <li>Late payments may result in service suspension</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Refund Policy:</strong> Setup fees are non-refundable. Monthly subscription fees may be prorated for early termination with 30 days notice.</p>
+                </div>
+            </div>
 
-    <h2>8. Data Retention Periods</h2>
-    <p>
-      Personal data is retained only as long as necessary for the purposes stated above or as required by law. After this period, your data will be securely deleted.
-    </p>
+            <div class="section">
+                <div class="section-number">5</div>
+                <h2 class="section-title">Intellectual Property</h2>
+                <div class="section-content">
+                    <p>All intellectual property rights in our AI systems, software, and related materials remain our exclusive property. This includes:</p>
+                    <ul>
+                        <li>AI algorithms and machine learning models</li>
+                        <li>Software code and system architecture</li>
+                        <li>Documentation and training materials</li>
+                        <li>Trademarks, logos, and branding</li>
+                    </ul>
+                    
+                    <div class="important-box">
+                        <h4>Client Data Rights:</h4>
+                        <p>You retain ownership of your business data. We use your data solely to provide services and improve our AI systems. We do not sell or share your data with third parties without your consent.</p>
+                    </div>
+                </div>
+            </div>
 
-    <h2>9. Contact Information</h2>
-    <p>
-      <strong>Owner:</strong> Michael Volynskiy<br>
-      <strong>Email:</strong> <a href="mailto:info@volynskiybusiness.com">info@volynskiybusiness.com</a><br>
-      <!-- Optionally, you may add: <strong>WhatsApp (messages only):</strong> +972585121035 -->
-    </p>
+            <div class="ornament">⚖️ ⚖️ ⚖️</div>
 
-    <h2>10. Changes to This Privacy Policy</h2>
-    <p>
-      We may update this Privacy Policy from time to time. All changes will be posted at <a href="http://volynskiybusiness.com/privacy-policy">this page</a> and the date of the latest update will be indicated above.
-    </p>
-    <p>Please review this page regularly. By continuing to use our services, you agree to this Policy.</p>
-  </main>
+            <div class="section">
+                <div class="section-number">6</div>
+                <h2 class="section-title">Data Security and Privacy</h2>
+                <div class="section-content">
+                    <p>We implement industry-standard security measures to protect your data:</p>
+                    <ul>
+                        <li><strong>Encryption</strong> - All data is encrypted in transit and at rest</li>
+                        <li><strong>Access Controls</strong> - Strict authentication and authorization protocols</li>
+                        <li><strong>Regular Audits</strong> - Continuous security monitoring and testing</li>
+                        <li><strong>Compliance</strong> - GDPR, CCPA, and other regulatory compliance</li>
+                    </ul>
+                    
+                    <p>For detailed information about data handling, please refer to our <a href="/privacy-policy/" style="color: #8b4513; font-weight: bold;">Privacy Policy</a>.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-number">7</div>
+                <h2 class="section-title">Service Level Agreement</h2>
+                <div class="section-content">
+                    <p>We commit to the following service levels:</p>
+                    <ul>
+                        <li><strong>Uptime:</strong> 99.5% monthly uptime guarantee</li>
+                        <li><strong>Response Time:</strong> API responses within 2 seconds average</li>
+                        <li><strong>Support:</strong> Business hours support (9 AM - 6 PM, Monday-Friday)</li>
+                        <li><strong>Updates:</strong> Regular system updates and improvements</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <h4>Service Credits:</h4>
+                        <p>If we fail to meet our uptime guarantee, you may be eligible for service credits as outlined in your service agreement.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="section">
+                <div class="section-number">8</div>
+                <h2 class="section-title">Limitation of Liability</h2>
+                <div class="section-content">
+                    <p>To the maximum extent permitted by law, our liability is limited as follows:</p>
+                    
+                    <div class="important-box">
+                        <h4>Liability Limitations:</h4>
+                        <ul>
+                            <li>Total liability shall not exceed the amount paid by you in the 12 months preceding the claim</li>
+                            <li>We are not liable for indirect, consequential, or punitive damages</li>
+                            <li>We are not responsible for third-party integrations or external system failures</li>
+                            <li>AI-generated content accuracy is not guaranteed</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Force Majeure:</strong> We are not liable for delays or failures due to circumstances beyond our reasonable control, including natural disasters, government actions, or internet outages.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-number">9</div>
+                <h2 class="section-title">Termination</h2>
+                <div class="section-content">
+                    <p>Either party may terminate this agreement:</p>
+                    <ul>
+                        <li><strong>For Convenience:</strong> With 30 days written notice</li>
+                        <li><strong>For Cause:</strong> Immediately upon material breach</li>
+                        <li><strong>Non-Payment:</strong> After 15 days of overdue payment</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <h4>Upon Termination:</h4>
+                        <ul>
+                            <li>Services will be discontinued</li>
+                            <li>Your data will be returned or securely deleted per your request</li>
+                            <li>Outstanding fees remain due and payable</li>
+                            <li>Confidentiality obligations survive termination</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ornament">⚖️ ⚖️ ⚖️</div>
+
+            <div class="section">
+                <div class="section-number">10</div>
+                <h2 class="section-title">Governing Law and Disputes</h2>
+                <div class="section-content">
+                    <p>These Terms are governed by the laws of <strong>Israel</strong>. Any disputes shall be resolved through:</p>
+                    <ul>
+                        <li><strong>First:</strong> Good faith negotiation between the parties</li>
+                        <li><strong>Second:</strong> Mediation by a mutually agreed mediator</li>
+                        <li><strong>Finally:</strong> Binding arbitration in Haifa, Israel</li>
+                    </ul>
+                    
+                    <div class="contact-info">
+                        <h3>Legal Notices</h3>
+                        <p><strong>Service Provider:</strong> Michael Volynskiy</p>
+                        <p><strong>Business Name:</strong> Volynskiy Business Automation</p>
+                        <p><strong>Address:</strong> Moshe Fliman St 4, Haifa, Israel</p>
+                        <p><strong>Legal Contact:</strong> info@volynskiybusiness.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-number">11</div>
+                <h2 class="section-title">Updates to Terms</h2>
+                <div class="section-content">
+                    <p>We may update these Terms from time to time. Changes will be:</p>
+                    <ul>
+                        <li>Posted on this page with an updated effective date</li>
+                        <li>Communicated via email for material changes</li>
+                        <li>Effective 30 days after notification for existing clients</li>
+                    </ul>
+                    
+                    <div class="important-box">
+                        <p><strong>Your Options:</strong> If you disagree with updated terms, you may terminate your service agreement within 30 days of notification without penalty.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-number">12</div>
+                <h2 class="section-title">Contact Information</h2>
+                <div class="section-content">
+                    <div class="contact-info">
+                        <h3>For Questions About These Terms</h3>
+                        <p><strong>Email:</strong> info@volynskiybusiness.com</p>
+                        <p><strong>Phone:</strong> +972 058 512 1035</p>
+                        <p><strong>WhatsApp:</strong> +972 058 512 1035</p>
+                        <p><strong>Business Hours:</strong> Sunday-Thursday, 9:00 AM - 6:00 PM (Israel Time)</p>
+                        <p><strong>Address:</strong> Moshe Fliman St 4, Haifa, Israel</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="ornament">⚖️ ⚖️ ⚖️</div>
+                <p>These Terms of Service are effective as of July 22, 2025</p>
+                <p>Last updated: July 22, 2025</p>
+                <p><em>By using our services, you acknowledge that you have read, understood, and agree to be bound by these terms.</em></p>
+                <div class="ornament">⚖️</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
