@@ -386,6 +386,37 @@
             text-align: center;
         }
         
+        footer a {
+            color: #ff6b6b;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        
+        footer a:hover {
+            color: #ff8e8e;
+            text-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+        }
+        
+        footer .footer-links {
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+        
+        footer .footer-links a {
+            margin: 0 0.5rem;
+            padding: 0.3rem 0.8rem;
+            border-radius: 5px;
+            background: rgba(255, 107, 107, 0.1);
+            border: 1px solid #ff6b6b;
+        }
+        
+        footer .footer-links a:hover {
+            background: rgba(255, 107, 107, 0.2);
+            transform: translateY(-1px);
+        }
+        
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -660,15 +691,17 @@
 
     <footer>
     <div class="container">
-        <p>&copy; 2025 Volynskiy Business Automation Ltd. All rights reserved. | Business Automation & AI Solutions</p>
-        <p>
-            <a href="/privacy-policy/" target="_blank">Privacy Policy</a> |
+        <p>&copy; 2025 Volynskiy Business Automation. All rights reserved. | Business Automation & AI Solutions</p>
+        <div class="footer-links">
+            <a href="/privacy-policy/" target="_blank">Privacy Policy</a>
             <a href="/terms/" target="_blank">Terms of Service</a>
-        </p>
+        </div>
         <p>
-            Legal Entity: Volynskiy Business Automation Ltd, Reg. #123456789<br>
-            Address: 123 Business St, Tel Aviv, Israel<br>
-            Contact: info@volynskiybusiness.com | +972-58-5121035
+            Service Provider: Michael Volynskiy<br>
+            Business Name: Volynskiy Business Automation<br>
+            Email: info@volynskiybusiness.com<br>
+            Phone: +972 058 512 1035<br>
+            Address: Moshe Fliman St 4, Haifa, Israel
         </p>
     </div>
     </footer>
