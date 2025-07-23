@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Privacy Policy - Volynskiy Business Automation. Learn how we protect and handle your personal data.">
     <title>Privacy Policy - Volynskiy Business Automation</title>
-    
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Georgia', 'Times New Roman', serif;
             line-height: 1.8;
@@ -21,19 +21,19 @@
             min-height: 100vh;
             padding: 2rem 0;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 0 20px;
         }
-        
+
         /* Antique Frame Styling */
         .document-frame {
             background: #fefefe;
             border: 20px solid #8b4513;
             border-image: linear-gradient(45deg, #8b4513, #cd853f, #daa520, #cd853f, #8b4513) 1;
-            box-shadow: 
+            box-shadow:
                 inset 0 0 0 5px #f4f4f4,
                 inset 0 0 0 10px #8b4513,
                 0 0 30px rgba(0,0,0,0.3),
@@ -43,7 +43,7 @@
             margin: 2rem 0;
             border-radius: 15px;
         }
-        
+
         .document-frame::before {
             content: '';
             position: absolute;
@@ -55,7 +55,7 @@
             border-radius: 20px;
             z-index: -1;
         }
-        
+
         .document-frame::after {
             content: '';
             position: absolute;
@@ -67,7 +67,7 @@
             border-radius: 8px;
             pointer-events: none;
         }
-        
+
         /* Header Styling */
         .header {
             text-align: center;
@@ -76,7 +76,7 @@
             border-bottom: 3px double #8b4513;
             position: relative;
         }
-        
+
         .header::after {
             content: '❦';
             position: absolute;
@@ -88,7 +88,7 @@
             font-size: 1.5rem;
             color: #8b4513;
         }
-        
+
         .document-title {
             font-size: 3rem;
             color: #8b4513;
@@ -97,14 +97,14 @@
             font-weight: bold;
             letter-spacing: 2px;
         }
-        
+
         .document-subtitle {
             font-size: 1.2rem;
             color: #5d4e37;
             font-style: italic;
             margin-bottom: 1rem;
         }
-        
+
         .effective-date {
             font-size: 1rem;
             color: #8b4513;
@@ -115,7 +115,7 @@
             display: inline-block;
             border: 1px solid #cd853f;
         }
-        
+
         /* Navigation */
         .nav-bar {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -124,7 +124,7 @@
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
-        
+
         .nav-content {
             display: flex;
             justify-content: space-between;
@@ -133,19 +133,19 @@
             margin: 0 auto;
             padding: 0 2rem;
         }
-        
+
         .nav-logo {
             color: white;
             font-size: 1.5rem;
             font-weight: bold;
             text-decoration: none;
         }
-        
+
         .nav-links {
             display: flex;
             gap: 2rem;
         }
-        
+
         .nav-links a {
             color: white;
             text-decoration: none;
@@ -153,17 +153,17 @@
             border-radius: 20px;
             transition: background 0.3s;
         }
-        
+
         .nav-links a:hover {
             background: rgba(255,255,255,0.2);
         }
-        
+
         /* Content Styling */
         .section {
             margin-bottom: 2.5rem;
             position: relative;
         }
-        
+
         .section-number {
             position: absolute;
             left: -1.5rem;
@@ -180,7 +180,7 @@
             font-size: 0.9rem;
             box-shadow: 0 3px 10px rgba(0,0,0,0.3);
         }
-        
+
         .section-title {
             font-size: 1.5rem;
             color: #8b4513;
@@ -189,7 +189,7 @@
             border-left: 4px solid #cd853f;
             font-weight: bold;
         }
-        
+
         .section-content {
             background: linear-gradient(135deg, #fafafa, #f0f0f0);
             padding: 1.5rem;
@@ -197,27 +197,28 @@
             border: 1px solid #e0e0e0;
             box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
         }
-        
+
         .section-content p {
             margin-bottom: 1rem;
             text-align: justify;
             font-size: 1rem;
         }
-        
+
         .section-content ul {
             margin: 1rem 0;
             padding-left: 2rem;
         }
-        
+
         .section-content li {
             margin-bottom: 0.5rem;
             position: relative;
         }
-        
+
         .section-content li::marker {
             color: #8b4513;
         }
-        
+
+        /* FIXED: Highlight box with proper word breaking */
         .highlight-box {
             background: linear-gradient(135deg, #fff3cd, #ffeaa7);
             border: 2px solid #f39c12;
@@ -225,8 +226,26 @@
             padding: 1.5rem;
             margin: 1.5rem 0;
             position: relative;
+            /* Critical mobile responsiveness fixes */
+            word-break: break-word;
+            overflow-wrap: anywhere;
+            max-width: 100%;
+            overflow: hidden;
         }
-        
+
+        /* Ensure all text inside highlight boxes breaks properly */
+        .highlight-box * {
+            word-break: break-word;
+            overflow-wrap: anywhere;
+        }
+
+        /* Specific styling for email addresses */
+        .email-break {
+            word-break: break-all;
+            display: inline-block;
+            max-width: 100%;
+        }
+
         .highlight-box::before {
             content: '⚠️';
             position: absolute;
@@ -236,7 +255,7 @@
             padding: 0 10px;
             font-size: 1.2rem;
         }
-        
+
         .contact-info {
             background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
             border: 2px solid #4caf50;
@@ -244,19 +263,23 @@
             padding: 1.5rem;
             margin: 2rem 0;
             text-align: center;
+            /* Apply same fixes to contact info boxes */
+            word-break: break-word;
+            overflow-wrap: anywhere;
+            max-width: 100%;
         }
-        
+
         .contact-info h3 {
             color: #2e7d32;
             margin-bottom: 1rem;
         }
-        
+
         .contact-info p {
             margin-bottom: 0.5rem;
             font-weight: bold;
             color: #1b5e20;
         }
-        
+
         /* Decorative Elements */
         .ornament {
             text-align: center;
@@ -264,14 +287,14 @@
             color: #8b4513;
             margin: 2rem 0;
         }
-        
+
         .divider {
             height: 3px;
             background: linear-gradient(to right, transparent, #8b4513, #cd853f, #8b4513, transparent);
             margin: 2rem 0;
             border-radius: 2px;
         }
-        
+
         /* Footer */
         .footer {
             text-align: center;
@@ -281,7 +304,7 @@
             color: #5d4e37;
             font-style: italic;
         }
-        
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .document-frame {
@@ -289,33 +312,64 @@
                 padding: 2rem;
                 margin: 1rem 0;
             }
-            
+
             .document-title {
                 font-size: 2.2rem;
             }
-            
+
             .nav-content {
                 flex-direction: column;
                 gap: 1rem;
                 text-align: center;
             }
-            
+
             .nav-links {
                 flex-wrap: wrap;
                 justify-content: center;
             }
-            
+
             .section-number {
                 position: static;
                 margin-bottom: 1rem;
                 margin-left: 0;
             }
-            
+
             .section-title {
                 padding-left: 0;
                 border-left: none;
                 border-bottom: 2px solid #cd853f;
                 padding-bottom: 0.5rem;
+            }
+        }
+
+        /* Additional mobile optimizations */
+        @media (max-width: 600px) {
+            .document-frame {
+                padding: 1.5rem;
+                border-width: 10px;
+            }
+
+            .document-title {
+                font-size: 1.8rem;
+                letter-spacing: 1px;
+            }
+
+            .section-content {
+                padding: 1rem;
+            }
+
+            .highlight-box {
+                padding: 1rem;
+                margin: 1rem 0;
+            }
+
+            /* Ensure no horizontal scrolling on small screens */
+            body {
+                overflow-x: hidden;
+            }
+
+            .container {
+                padding: 0 15px;
             }
         }
     </style>
@@ -363,7 +417,7 @@
                         <li><strong>Physical address</strong> - for service delivery when applicable</li>
                         <li><strong>Communication data</strong> - any data you provide via web forms or WhatsApp messages</li>
                     </ul>
-                    
+
                     <div class="highlight-box">
                         <h4>Purposes of Data Processing:</h4>
                         <ul>
@@ -374,7 +428,7 @@
                             <li>Compliance with legal requirements</li>
                         </ul>
                     </div>
-                    
+
                     <p><strong>Methods of collection:</strong> Forms on the website, WhatsApp correspondence, email, and phone calls.</p>
                 </div>
             </div>
@@ -386,11 +440,11 @@
                 <h2 class="section-title">Consent to Newsletters and Notifications</h2>
                 <div class="section-content">
                     <p>By providing your contact details, you consent to receive notifications about new products, services, special offers, and events via the <strong>WhatsApp Business API</strong>.</p>
-                    
+
                     <div class="highlight-box">
                         <h4>You may opt out at any time:</h4>
                         <ul>
-                            <li>Send an email to <strong>info@volynskiybusiness.com</strong> with the subject "Opt out of notifications"</li>
+                            <li>Send an email to <strong class="email-break">info@volynskiybusiness.com</strong> with the subject "Opt out of notifications"</li>
                             <li>Or send the message <strong>"STOP"</strong> in our WhatsApp chat</li>
                         </ul>
                     </div>
@@ -447,10 +501,10 @@
                         <li><strong>Withdraw consent</strong> at any time - Stop data processing based on consent</li>
                         <li><strong>Data portability</strong> - Receive your data in a structured format</li>
                     </ul>
-                    
+
                     <div class="contact-info">
                         <h3>To exercise your rights:</h3>
-                        <p>Contact us at: <strong>info@volynskiybusiness.com</strong></p>
+                        <p>Contact us at: <strong class="email-break">info@volynskiybusiness.com</strong></p>
                         <p>We will respond to your request within 30 days</p>
                     </div>
                 </div>
@@ -481,7 +535,7 @@
                         <h3>Data Controller</h3>
                         <p><strong>Service Provider:</strong> Michael Volynskiy</p>
                         <p><strong>Business Name:</strong> Volynskiy Business Automation</p>
-                        <p><strong>Email:</strong> info@volynskiybusiness.com</p>
+                        <p><strong>Email:</strong> <span class="email-break">info@volynskiybusiness.com</span></p>
                         <p><strong>Phone:</strong> +972 058 512 1035</p>
                         <p><strong>Address:</strong> Moshe Fliman St 4, Haifa, Israel</p>
                     </div>
@@ -493,11 +547,11 @@
                 <h2 class="section-title">Changes to This Privacy Policy</h2>
                 <div class="section-content">
                     <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. All changes will be posted on this page and the date of the latest update will be indicated above.</p>
-                    
+
                     <div class="highlight-box">
                         <p><strong>Please review this page regularly.</strong> By continuing to use our services, you agree to this Policy and any updates we make to it.</p>
                     </div>
-                    
+
                     <p>For significant changes that affect your rights, we will notify you via email or through our website before the changes take effect.</p>
                 </div>
             </div>
