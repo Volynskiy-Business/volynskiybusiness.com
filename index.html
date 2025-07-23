@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" id="html-root">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Leading AI automation company specializing in AI assistants, agents, and chatbots. Transform your business with cutting-edge artificial intelligence solutions.">
-    <meta name="keywords" content="AI automation, AI assistants, chatbots, AI agents, business automation, artificial intelligence">
+    <meta name="description"
+        content="Leading AI automation company specializing in AI assistants, agents, and chatbots. Transform your business with cutting-edge artificial intelligence solutions.">
+    <meta name="keywords"
+        content="AI automation, AI assistants, chatbots, AI agents, business automation, artificial intelligence">
     <meta name="author" content="AI Automation Solutions">
-    
+
     <!-- Facebook Domain Verification -->
     <meta name="facebook-domain-verification" content="1ophx1e5zde492wkrc7bjjxd8ugtu6" />
-    
+
     <!-- Open Graph Meta Tags for Social Media -->
     <meta property="og:title" content="AI Automation Solutions - Transform Your Business with AI">
-    <meta property="og:description" content="Leading AI automation company specializing in AI assistants, agents, and chatbots.">
+    <meta property="og:description"
+        content="Leading AI automation company specializing in AI assistants, agents, and chatbots.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://volynskiybusiness.com">
     <meta property="og:image" content="https://volynskiybusiness.com/og-image.jpg">
-    
+
     <title>AI Automation Solutions - Transform Your Business with AI</title>
-    
+
     <!-- Preload critical resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <style>
         :root {
             --primary-color: #667eea;
@@ -33,26 +37,26 @@
             --text-light: #6c757d;
             --bg-light: #f8f9fa;
             --white: #ffffff;
-            --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
-            --shadow-medium: 0 5px 20px rgba(0,0,0,0.15);
-            --shadow-heavy: 0 10px 40px rgba(0,0,0,0.2);
+            --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.1);
+            --shadow-medium: 0 5px 20px rgba(0, 0, 0, 0.15);
+            --shadow-heavy: 0 10px 40px rgba(0, 0, 0, 0.2);
             --border-radius: 12px;
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             --max-width: 1200px;
             --header-height: 70px;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         html {
             scroll-behavior: smooth;
             font-size: 16px;
         }
-        
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
@@ -60,13 +64,13 @@
             overflow-x: hidden;
             background: var(--white);
         }
-        
+
         .container {
             max-width: var(--max-width);
             margin: 0 auto;
             padding: 0 1rem;
         }
-        
+
         /* Mobile Menu Toggle */
         .mobile-menu-toggle {
             display: none;
@@ -79,11 +83,11 @@
             border-radius: 4px;
             transition: var(--transition);
         }
-        
+
         .mobile-menu-toggle:hover {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
         }
-        
+
         .hamburger {
             display: flex;
             flex-direction: column;
@@ -91,7 +95,7 @@
             height: 18px;
             justify-content: space-between;
         }
-        
+
         .hamburger span {
             display: block;
             height: 2px;
@@ -100,19 +104,19 @@
             border-radius: 1px;
             transition: var(--transition);
         }
-        
+
         .mobile-menu-toggle.active .hamburger span:nth-child(1) {
             transform: rotate(45deg) translate(6px, 6px);
         }
-        
+
         .mobile-menu-toggle.active .hamburger span:nth-child(2) {
             opacity: 0;
         }
-        
+
         .mobile-menu-toggle.active .hamburger span:nth-child(3) {
             transform: rotate(-45deg) translate(6px, -6px);
         }
-        
+
         /* Header */
         header {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -125,7 +129,7 @@
             box-shadow: var(--shadow-light);
             height: var(--header-height);
         }
-        
+
         nav {
             display: flex;
             justify-content: space-between;
@@ -133,7 +137,7 @@
             height: 100%;
             padding: 0 1rem;
         }
-        
+
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
@@ -143,14 +147,14 @@
             background-clip: text;
             text-decoration: none;
         }
-        
+
         .nav-links {
             display: flex;
             list-style: none;
             gap: 2rem;
             align-items: center;
         }
-        
+
         .nav-links a {
             color: white;
             text-decoration: none;
@@ -159,11 +163,11 @@
             padding: 0.5rem 1rem;
             border-radius: var(--border-radius);
         }
-        
+
         .nav-links a:hover {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
         }
-        
+
         .cta-button {
             background: var(--accent-color);
             color: white;
@@ -177,21 +181,21 @@
             transition: var(--transition);
             white-space: nowrap;
         }
-        
+
         .cta-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
         }
-        
+
         /* Language Selector */
         .language-selector {
             position: relative;
             margin-left: 1rem;
         }
-        
+
         .language-btn {
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 20px;
@@ -202,60 +206,63 @@
             gap: 0.5rem;
             transition: var(--transition);
         }
-        
+
         .language-btn:hover {
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
         }
-        
+
+        /* --- BEGIN: FIXED LANGUAGE DROPDOWN CSS --- */
         .language-dropdown {
             position: absolute;
             top: 100%;
             right: 0;
-            background: white;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow-medium);
-            min-width: 150px;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.18);
+            min-width: 170px;
+            max-height: 320px;
+            overflow-y: auto;
             opacity: 0;
             visibility: hidden;
             transform: translateY(-10px);
-            transition: var(--transition);
+            transition: all 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
             z-index: 1001;
             margin-top: 0.5rem;
+            border: 1px solid #eee;
         }
-        
+
         .language-dropdown.active {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: translateY(0) !important;
         }
-        
+
         .language-option {
-            display: block;
-            padding: 0.75rem 1rem;
-            color: var(--text-dark);
-            text-decoration: none;
-            transition: var(--transition);
-            border-bottom: 1px solid #eee;
+            display: block !important;
+            padding: 0.85rem 1.25rem;
+            color: #222 !important;
+            font-size: 1rem;
+            text-decoration: none !important;
+            border-bottom: 1px solid #f5f5f5;
+            background: #fff !important;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            user-select: none;
         }
-        
-        .language-option:first-child {
-            border-radius: var(--border-radius) var(--border-radius) 0 0;
-        }
-        
+
         .language-option:last-child {
             border-bottom: none;
-            border-radius: 0 0 var(--border-radius) var(--border-radius);
         }
-        
-        .language-option:hover {
-            background: var(--bg-light);
+
+        .language-option.active,
+        .language-option:hover,
+        .language-option:focus {
+            background: #6c63ff !important;
+            /* или твой основной цвет */
+            color: #fff !important;
+            font-weight: 600;
         }
-        
-        .language-option.active {
-            background: var(--primary-color);
-            color: white;
-        }
-        
+
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -268,7 +275,7 @@
             display: flex;
             align-items: center;
         }
-        
+
         .hero::before {
             content: '';
             position: absolute;
@@ -279,14 +286,14 @@
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
             opacity: 0.3;
         }
-        
+
         .hero-content {
             position: relative;
             z-index: 2;
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .hero h1 {
             font-size: clamp(2.5rem, 5vw, 4rem);
             margin-bottom: 1.5rem;
@@ -294,7 +301,7 @@
             line-height: 1.2;
             animation: fadeInUp 1s ease-out;
         }
-        
+
         .hero p {
             font-size: clamp(1.1rem, 2vw, 1.3rem);
             margin-bottom: 2.5rem;
@@ -302,7 +309,7 @@
             line-height: 1.6;
             animation: fadeInUp 1s ease-out 0.2s both;
         }
-        
+
         .hero-buttons {
             display: flex;
             gap: 1rem;
@@ -310,7 +317,7 @@
             flex-wrap: wrap;
             animation: fadeInUp 1s ease-out 0.4s both;
         }
-        
+
         .btn {
             padding: 1rem 2rem;
             border: none;
@@ -325,34 +332,34 @@
             transition: var(--transition);
             white-space: nowrap;
         }
-        
+
         .btn-primary {
             background: var(--accent-color);
             color: white;
         }
-        
+
         .btn-secondary {
             background: transparent;
             color: white;
             border: 2px solid white;
         }
-        
+
         .btn-primary:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(255, 107, 107, 0.4);
         }
-        
+
         .btn-secondary:hover {
             background: white;
             color: var(--primary-color);
         }
-        
+
         /* Services Section */
         .services {
             padding: 5rem 0;
             background: var(--bg-light);
         }
-        
+
         .section-title {
             text-align: center;
             font-size: clamp(2rem, 4vw, 2.5rem);
@@ -360,14 +367,14 @@
             color: var(--text-dark);
             font-weight: 700;
         }
-        
+
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
-        
+
         .service-card {
             background: white;
             padding: 2.5rem;
@@ -379,7 +386,7 @@
             overflow: hidden;
             border: 1px solid #f0f0f0;
         }
-        
+
         .service-card::before {
             content: '';
             position: absolute;
@@ -387,19 +394,19 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
             transition: left 0.5s;
         }
-        
+
         .service-card:hover::before {
             left: 100%;
         }
-        
+
         .service-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-medium);
         }
-        
+
         .service-icon {
             font-size: 3rem;
             margin-bottom: 1.5rem;
@@ -408,32 +415,32 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .service-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: var(--text-dark);
             font-weight: 600;
         }
-        
+
         .service-card p {
             color: var(--text-light);
             line-height: 1.6;
         }
-        
+
         /* Features Section */
         .features {
             padding: 5rem 0;
             background: white;
         }
-        
+
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
-        
+
         .feature-item {
             display: flex;
             align-items: flex-start;
@@ -442,11 +449,11 @@
             border-radius: var(--border-radius);
             transition: var(--transition);
         }
-        
+
         .feature-item:hover {
             background: var(--bg-light);
         }
-        
+
         .feature-icon {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
@@ -459,20 +466,20 @@
             font-size: 1.2rem;
             flex-shrink: 0;
         }
-        
+
         .feature-content h4 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
             color: var(--text-dark);
             font-weight: 600;
         }
-        
+
         .feature-content p {
             color: var(--text-light);
             font-size: 0.95rem;
             line-height: 1.5;
         }
-        
+
         /* CTA Section */
         .cta-section {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -480,13 +487,13 @@
             padding: 5rem 0;
             text-align: center;
         }
-        
+
         .cta-section h2 {
             font-size: clamp(2rem, 4vw, 2.5rem);
             margin-bottom: 1rem;
             font-weight: 700;
         }
-        
+
         .cta-section p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
@@ -495,20 +502,20 @@
             margin-left: auto;
             margin-right: auto;
         }
-        
+
         /* Contact Section */
         .contact {
             padding: 5rem 0;
             background: var(--bg-light);
         }
-        
+
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
             margin-top: 3rem;
         }
-        
+
         .contact-info,
         .contact-form {
             background: white;
@@ -516,21 +523,21 @@
             border-radius: var(--border-radius);
             box-shadow: var(--shadow-light);
         }
-        
+
         .contact-info h3,
         .contact-form h3 {
             margin-bottom: 2rem;
             color: var(--text-dark);
             font-weight: 600;
         }
-        
+
         .contact-item {
             display: flex;
             align-items: center;
             gap: 1rem;
             margin-bottom: 1.5rem;
         }
-        
+
         .contact-icon {
             width: 40px;
             height: 40px;
@@ -542,18 +549,18 @@
             justify-content: center;
             flex-shrink: 0;
         }
-        
+
         .form-group {
             margin-bottom: 1.5rem;
         }
-        
+
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
             color: var(--text-dark);
             font-weight: 500;
         }
-        
+
         .form-group input,
         .form-group textarea,
         .form-group select {
@@ -565,7 +572,7 @@
             transition: var(--transition);
             font-family: inherit;
         }
-        
+
         .form-group input:focus,
         .form-group textarea:focus,
         .form-group select:focus {
@@ -573,12 +580,12 @@
             border-color: var(--primary-color);
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
-        
+
         .form-group textarea {
             height: 120px;
             resize: vertical;
         }
-        
+
         /* Footer */
         footer {
             background: var(--text-dark);
@@ -586,18 +593,18 @@
             padding: 3rem 0 2rem;
             text-align: center;
         }
-        
+
         footer a {
             color: var(--accent-color);
             text-decoration: none;
             font-weight: 500;
             transition: var(--transition);
         }
-        
+
         footer a:hover {
             color: #ff8e8e;
         }
-        
+
         .footer-links {
             margin: 1.5rem 0;
             display: flex;
@@ -605,7 +612,7 @@
             gap: 2rem;
             flex-wrap: wrap;
         }
-        
+
         .footer-links a {
             padding: 0.5rem 1rem;
             border-radius: var(--border-radius);
@@ -613,23 +620,23 @@
             border: 1px solid var(--accent-color);
             transition: var(--transition);
         }
-        
+
         .footer-links a:hover {
             background: rgba(255, 107, 107, 0.2);
             transform: translateY(-1px);
         }
-        
+
         .footer-provider {
             margin-top: 2rem;
             padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
         }
-        
+
         .footer-provider p {
             line-height: 2;
             text-align: center;
         }
-        
+
         /* Floating Action Button */
         .fab {
             position: fixed;
@@ -649,34 +656,35 @@
             transition: var(--transition);
             z-index: 1000;
         }
-        
+
         .fab:hover {
             transform: scale(1.1);
             box-shadow: var(--shadow-heavy);
         }
-        
+
         /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         /* Mobile Responsive Design */
         @media (max-width: 768px) {
             :root {
                 --header-height: 60px;
             }
-            
+
             .mobile-menu-toggle {
                 display: block;
             }
-            
+
             .nav-links {
                 position: fixed;
                 top: var(--header-height);
@@ -690,51 +698,51 @@
                 transition: var(--transition);
                 box-shadow: var(--shadow-medium);
             }
-            
+
             .nav-links.active {
                 transform: translateX(0);
             }
-            
+
             .language-selector {
                 margin-left: 0;
                 margin-top: 1rem;
             }
-            
+
             .hero {
                 padding: calc(var(--header-height) + 2rem) 0 3rem;
                 min-height: 80vh;
             }
-            
+
             .hero-buttons {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             .btn {
                 width: 100%;
                 max-width: 280px;
                 justify-content: center;
             }
-            
+
             .contact-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-            
+
             .services-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .features-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .footer-links {
                 flex-direction: column;
                 align-items: center;
                 gap: 1rem;
             }
-            
+
             .fab {
                 bottom: 1rem;
                 right: 1rem;
@@ -743,31 +751,31 @@
                 font-size: 1.2rem;
             }
         }
-        
+
         @media (max-width: 480px) {
             .container {
                 padding: 0 0.75rem;
             }
-            
+
             .service-card,
             .contact-info,
             .contact-form {
                 padding: 1.5rem;
             }
-            
+
             .hero {
                 padding: calc(var(--header-height) + 1.5rem) 0 2rem;
             }
         }
-        
+
         /* High contrast mode support */
         @media (prefers-contrast: high) {
             :root {
-                --shadow-light: 0 2px 10px rgba(0,0,0,0.3);
-                --shadow-medium: 0 5px 20px rgba(0,0,0,0.4);
+                --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.3);
+                --shadow-medium: 0 5px 20px rgba(0, 0, 0, 0.4);
             }
         }
-        
+
         /* Reduced motion support */
         @media (prefers-reduced-motion: reduce) {
             * {
@@ -775,36 +783,64 @@
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
             }
-            
+
             html {
                 scroll-behavior: auto;
             }
+
+            .language-dropdown,
+            .language-dropdown.active {
+                background: #fff !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+                color: #222 !important;
+                z-index: 9999 !important;
+            }
+
+            .language-option {
+                display: block !important;
+                color: #222 !important;
+                background: #fff !important;
+                padding: 0.7em 1em !important;
+                font-size: 1em !important;
+                border-bottom: 1px solid #eee !important;
+            }
+
+            .language-option.active {
+                background: #667eea !important;
+                color: #fff !important;
+                font-weight: bold !important;
+            }
+
         }
     </style>
 </head>
+
 <body>
     <!-- Facebook Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '1047905190794032');
         fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1047905190794032&ev=PageView&noscript=1"
-    /></noscript>
+            src="https://www.facebook.com/tr?id=1047905190794032&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
 
     <header>
         <nav class="container">
             <a href="#home" class="logo" data-translate="logo">AI Solutions</a>
-            
+
             <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
                 <div class="hamburger">
                     <span></span>
@@ -812,7 +848,7 @@
                     <span></span>
                 </div>
             </button>
-            
+
             <ul class="nav-links">
                 <li><a href="#home" data-translate="nav.home">Home</a></li>
                 <li><a href="#services" data-translate="nav.services">Services</a></li>
@@ -825,13 +861,13 @@
                             <span>▼</span>
                         </button>
                         <div class="language-dropdown" id="languageDropdown">
-                            <a href="#" class="language-option" data-lang="en">🇺🇸 English</a>
-                            <a href="#" class="language-option" data-lang="he">🇮🇱 עברית</a>
-                            <a href="#" class="language-option" data-lang="ar">🇸🇦 العربية</a>
-                            <a href="#" class="language-option" data-lang="ru">🇷🇺 Русский</a>
-                            <a href="#" class="language-option" data-lang="es">🇪🇸 Español</a>
-                            <a href="#" class="language-option" data-lang="fr">🇫🇷 Français</a>
-                            <a href="#" class="language-option" data-lang="de">🇩🇪 Deutsch</a>
+                            <a href="#" class="language-option" data-lang="en">English</a>
+                            <a href="#" class="language-option" data-lang="he">עברית</a>
+                            <a href="#" class="language-option" data-lang="ar">العربية</a>
+                            <a href="#" class="language-option" data-lang="ru">Русский</a>
+                            <a href="#" class="language-option" data-lang="es">Español</a>
+                            <a href="#" class="language-option" data-lang="fr">Français</a>
+                            <a href="#" class="language-option" data-lang="de">Deutsch</a>
                         </div>
                     </div>
                 </li>
@@ -845,7 +881,9 @@
             <div class="container">
                 <div class="hero-content">
                     <h1 data-translate="hero.title">Transform Your Business with AI</h1>
-                    <p data-translate="hero.subtitle">Leading AI automation company specializing in intelligent assistants, agents, and chatbots that revolutionize customer engagement and business operations.</p>
+                    <p data-translate="hero.subtitle">Leading AI automation company specializing in intelligent
+                        assistants, agents, and chatbots that revolutionize customer engagement and business operations.
+                    </p>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn btn-primary" data-translate="hero.startJourney">
                             <span>🚀</span>
@@ -867,1157 +905,1216 @@
                     <div class="service-card">
                         <div class="service-icon">🤖</div>
                         <h3 data-translate="services.assistants.title">AI Assistants</h3>
-                        <p data-translate="services.assistants.description">Intelligent virtual assistants that handle customer inquiries, schedule appointments, and provide 24/7 support with human-like interactions.</p>
+                        <p data-translate="services.assistants.description">Intelligent virtual assistants that handle
+                            customer inquiries, schedule appointments, and provide 24/7 support with human-like
+                            interactions.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">🎯</div>
                         <h3 data-translate="services.agents.title">AI Agents</h3>
-                        <p data-translate="services.agents.description">Autonomous AI agents that perform complex tasks, analyze data, and make intelligent decisions to optimize your business processes.</p>
+                        <p data-translate="services.agents.description">Autonomous AI agents that perform complex tasks,
+                            analyze data, and make intelligent decisions to optimize your business processes.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">💬</div>
                         <h3 data-translate="services.chatbots.title">Smart Chatbots</h3>
-                        <p data-translate="services.chatbots.description">Advanced conversational AI that engages customers, qualifies leads, and provides instant support across multiple platforms.</p>
+                        <p data-translate="services.chatbots.description">Advanced conversational AI that engages
+                            customers, qualifies leads, and provides instant support across multiple platforms.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">⚡</div>
                         <h3 data-translate="services.automation.title">Business Automation</h3>
-                        <p data-translate="services.automation.description">End-to-end automation solutions that streamline workflows, reduce costs, and increase operational efficiency.</p>
-                   </div>
-                   <div class="service-card">
-                       <div class="service-icon">📊</div>
-                       <h3 data-translate="services.analytics.title">AI Analytics</h3>
-                       <p data-translate="services.analytics.description">Powerful analytics and insights powered by AI to help you make data-driven decisions and optimize performance.</p>
-                   </div>
-                   <div class="service-card">
-                       <div class="service-icon">🔧</div>
-                       <h3 data-translate="services.integration.title">Custom Integration</h3>
-                       <p data-translate="services.integration.description">Seamless integration with your existing systems and platforms for a unified AI-powered business ecosystem.</p>
-                   </div>
-               </div>
-           </div>
-       </section>
+                        <p data-translate="services.automation.description">End-to-end automation solutions that
+                            streamline workflows, reduce costs, and increase operational efficiency.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📊</div>
+                        <h3 data-translate="services.analytics.title">AI Analytics</h3>
+                        <p data-translate="services.analytics.description">Powerful analytics and insights powered by AI
+                            to help you make data-driven decisions and optimize performance.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3 data-translate="services.integration.title">Custom Integration</h3>
+                        <p data-translate="services.integration.description">Seamless integration with your existing
+                            systems and platforms for a unified AI-powered business ecosystem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-       <section id="features" class="features">
-           <div class="container">
-               <h2 class="section-title" data-translate="features.title">Why Choose Our AI Solutions</h2>
-               <div class="features-grid">
-                   <div class="feature-item">
-                       <div class="feature-icon">⚡</div>
-                       <div class="feature-content">
-                           <h4 data-translate="features.fast.title">Lightning Fast Implementation</h4>
-                           <p data-translate="features.fast.description">Get your AI solutions up and running in days, not months, with our streamlined deployment process.</p>
-                       </div>
-                   </div>
-                   <div class="feature-item">
-                       <div class="feature-icon">🔒</div>
-                       <div class="feature-content">
-                           <h4 data-translate="features.security.title">Enterprise Security</h4>
-                           <p data-translate="features.security.description">Bank-level security with end-to-end encryption and compliance with industry standards.</p>
-                       </div>
-                   </div>
-                   <div class="feature-item">
-                       <div class="feature-icon">📈</div>
-                       <div class="feature-content">
-                           <h4 data-translate="features.scalable.title">Scalable Solutions</h4>
-                           <p data-translate="features.scalable.description">Our AI systems grow with your business, handling increased workloads seamlessly.</p>
-                       </div>
-                   </div>
-                   <div class="feature-item">
-                       <div class="feature-icon">🎯</div>
-                       <div class="feature-content">
-                           <h4 data-translate="features.targeting.title">Precision Targeting</h4>
-                           <p data-translate="features.targeting.description">Advanced algorithms that understand your customers and deliver personalized experiences.</p>
-                       </div>
-                   </div>
-                   <div class="feature-item">
-                       <div class="feature-icon">🔄</div>
-                       <div class="feature-content">
-                           <h4 data-translate="features.learning.title">Continuous Learning</h4>
-                           <p data-translate="features.learning.description">AI that gets smarter over time, adapting to your business needs and customer preferences.</p>
-                       </div>
-                   </div>
-                   <div class="feature-item">
-                       <div class="feature-icon">🛠️</div>
-                       <div class="feature-content">
-                           <h4 data-translate="features.support.title">24/7 Support</h4>
-                           <p data-translate="features.support.description">Round-the-clock technical support and maintenance to ensure optimal performance.</p>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </section>
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title" data-translate="features.title">Why Choose Our AI Solutions</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <div class="feature-content">
+                            <h4 data-translate="features.fast.title">Lightning Fast Implementation</h4>
+                            <p data-translate="features.fast.description">Get your AI solutions up and running in days,
+                                not months, with our streamlined deployment process.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔒</div>
+                        <div class="feature-content">
+                            <h4 data-translate="features.security.title">Enterprise Security</h4>
+                            <p data-translate="features.security.description">Bank-level security with end-to-end
+                                encryption and compliance with industry standards.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📈</div>
+                        <div class="feature-content">
+                            <h4 data-translate="features.scalable.title">Scalable Solutions</h4>
+                            <p data-translate="features.scalable.description">Our AI systems grow with your business,
+                                handling increased workloads seamlessly.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎯</div>
+                        <div class="feature-content">
+                            <h4 data-translate="features.targeting.title">Precision Targeting</h4>
+                            <p data-translate="features.targeting.description">Advanced algorithms that understand your
+                                customers and deliver personalized experiences.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔄</div>
+                        <div class="feature-content">
+                            <h4 data-translate="features.learning.title">Continuous Learning</h4>
+                            <p data-translate="features.learning.description">AI that gets smarter over time, adapting
+                                to your business needs and customer preferences.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🛠️</div>
+                        <div class="feature-content">
+                            <h4 data-translate="features.support.title">24/7 Support</h4>
+                            <p data-translate="features.support.description">Round-the-clock technical support and
+                                maintenance to ensure optimal performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-       <section class="cta-section">
-           <div class="container">
-               <h2 data-translate="cta.title">Ready to Revolutionize Your Business?</h2>
-               <p data-translate="cta.subtitle">Join hundreds of companies already using our AI solutions to boost efficiency and customer satisfaction.</p>
-               <a href="#contact" class="btn btn-primary" data-translate="cta.button">Get Free Consultation</a>
-           </div>
-       </section>
+        <section class="cta-section">
+            <div class="container">
+                <h2 data-translate="cta.title">Ready to Revolutionize Your Business?</h2>
+                <p data-translate="cta.subtitle">Join hundreds of companies already using our AI solutions to boost
+                    efficiency and customer satisfaction.</p>
+                <a href="#contact" class="btn btn-primary" data-translate="cta.button">Get Free Consultation</a>
+            </div>
+        </section>
 
-       <section id="contact" class="contact">
-           <div class="container">
-               <h2 class="section-title" data-translate="contact.title">Get Started Today</h2>
-               <div class="contact-grid">
-                   <div class="contact-info">
-                       <h3 data-translate="contact.info.title">Contact Information</h3>
-                       <div class="contact-item">
-                           <div class="contact-icon">📧</div>
-                           <div>
-                               <h4 data-translate="contact.info.email">Email</h4>
-                               <p>info@volynskiybusiness.com</p>
-                           </div>
-                       </div>
-                       <div class="contact-item">
-                           <div class="contact-icon">📞</div>
-                           <div>
-                               <h4 data-translate="contact.info.phone">Phone</h4>
-                               <p>+972 058 512 1035</p>
-                           </div>
-                       </div>
-                       <div class="contact-item">
-                           <div class="contact-icon">💬</div>
-                           <div>
-                               <h4 data-translate="contact.info.whatsapp">WhatsApp</h4>
-                               <p>+972 058 512 1035</p>
-                           </div>
-                       </div>
-                       <div class="contact-item">
-                           <div class="contact-icon">🕒</div>
-                           <div>
-                               <h4 data-translate="contact.info.hours">Business Hours</h4>
-                               <p data-translate="contact.info.weekdays">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                               <p data-translate="contact.info.saturday">Saturday: 10:00 AM - 4:00 PM</p>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="contact-form">
-                       <h3 data-translate="contact.form.title">Request a Consultation</h3>
-                       <form id="contactForm">
-                           <div class="form-group">
-                               <label for="name" data-translate="contact.form.name">Full Name</label>
-                               <input type="text" id="name" name="name" required>
-                           </div>
-                           <div class="form-group">
-                               <label for="email" data-translate="contact.form.email">Email Address</label>
-                               <input type="email" id="email" name="email" required>
-                           </div>
-                           <div class="form-group">
-                               <label for="company" data-translate="contact.form.company">Company Name</label>
-                               <input type="text" id="company" name="company">
-                           </div>
-                           <div class="form-group">
-                               <label for="service" data-translate="contact.form.service">Service Interest</label>
-                               <select id="service" name="service">
-                                   <option value="" data-translate="contact.form.selectService">Select a service</option>
-                                   <option value="ai-assistants" data-translate="services.assistants.title">AI Assistants</option>
-                                   <option value="ai-agents" data-translate="services.agents.title">AI Agents</option>
-                                   <option value="chatbots" data-translate="services.chatbots.title">Smart Chatbots</option>
-                                   <option value="automation" data-translate="services.automation.title">Business Automation</option>
-                                   <option value="analytics" data-translate="services.analytics.title">AI Analytics</option>
-                                   <option value="integration" data-translate="services.integration.title">Custom Integration</option>
-                               </select>
-                           </div>
-                           <div class="form-group">
-                               <label for="message" data-translate="contact.form.message">Message</label>
-                               <textarea id="message" name="message" data-translate-placeholder="contact.form.messagePlaceholder" placeholder="Tell us about your project and requirements..."></textarea>
-                           </div>
-                           <button type="submit" class="btn btn-primary" style="width: 100%;" data-translate="contact.form.submit">Send Message</button>
-                       </form>
-                   </div>
-               </div>
-           </div>
-       </section>
-   </main>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title" data-translate="contact.title">Get Started Today</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3 data-translate="contact.info.title">Contact Information</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4 data-translate="contact.info.email">Email</h4>
+                                <p>info@volynskiybusiness.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4 data-translate="contact.info.phone">Phone</h4>
+                                <p>+972 058 512 1035</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">💬</div>
+                            <div>
+                                <h4 data-translate="contact.info.whatsapp">WhatsApp</h4>
+                                <p>+972 058 512 1035</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div>
+                                <h4 data-translate="contact.info.hours">Business Hours</h4>
+                                <p data-translate="contact.info.weekdays">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                <p data-translate="contact.info.saturday">Saturday: 10:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3 data-translate="contact.form.title">Request a Consultation</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" data-translate="contact.form.name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-translate="contact.form.email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company" data-translate="contact.form.company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="service" data-translate="contact.form.service">Service Interest</label>
+                                <select id="service" name="service">
+                                    <option value="" data-translate="contact.form.selectService">Select a service
+                                    </option>
+                                    <option value="ai-assistants" data-translate="services.assistants.title">AI
+                                        Assistants</option>
+                                    <option value="ai-agents" data-translate="services.agents.title">AI Agents</option>
+                                    <option value="chatbots" data-translate="services.chatbots.title">Smart Chatbots
+                                    </option>
+                                    <option value="automation" data-translate="services.automation.title">Business
+                                        Automation</option>
+                                    <option value="analytics" data-translate="services.analytics.title">AI Analytics
+                                    </option>
+                                    <option value="integration" data-translate="services.integration.title">Custom
+                                        Integration</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-translate="contact.form.message">Message</label>
+                                <textarea id="message" name="message"
+                                    data-translate-placeholder="contact.form.messagePlaceholder"
+                                    placeholder="Tell us about your project and requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;"
+                                data-translate="contact.form.submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-   <footer>
-       <div class="container">
-           <p data-translate="footer.copyright">&copy; 2025 Volynskiy Business Automation. All rights reserved.</p>
-           <div class="footer-links">
-               <a href="/privacy-policy/" data-translate="footer.privacy">Privacy Policy</a>
-               <a href="/terms/" data-translate="footer.terms">Terms of Service</a>
-           </div>
-           <div class="footer-provider">
-               <p data-translate="footer.provider">
-                   Service Provider: Michael Volynskiy<br>
-                   Business Name: Volynskiy Business Automation<br>
-                   Email: info@volynskiybusiness.com<br>
-                   Phone: +972 058 512 1035<br>
-                   Address: Moshe Fliman St 4, Haifa, Israel
-               </p>
-           </div>
-       </div>
-   </footer>
+    <footer>
+        <div class="container">
+            <p data-translate="footer.copyright">&copy; 2025 Volynskiy Business Automation. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="/privacy-policy/" data-translate="footer.privacy">Privacy Policy</a>
+                <a href="/terms/" data-translate="footer.terms">Terms of Service</a>
+                <a href="/data-deletion/" data-translate="footer.dataDeletion">Data Deletion</a>
+            </div>
+            <div class="footer-provider">
+                <p data-translate="footer.provider">
+                    Service Provider: Michael Volynskiy<br>
+                    Business Name: Volynskiy Business Automation<br>
+                    Email: info@volynskiybusiness.com<br>
+                    Phone: +972 058 512 1035<br>
+                    Address: Moshe Fliman St 4, Haifa, Israel
+                </p>
+            </div>
+        </div>
+    </footer>
 
-   <!-- WhatsApp Floating Button -->
-   <a href="https://wa.me/972585121035" class="fab" target="_blank" title="Chat on WhatsApp">
-       💬
-   </a>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/972585121035" class="fab" target="_blank" title="Chat on WhatsApp">
+        💬
+    </a>
 
-   <script>
-       // Multi-language support with automatic detection
-       const translations = {
-           ru: {
-               logo: "AI Решения",
-               nav: {
-                   home: "Главная",
-                   services: "Услуги",
-                   features: "Возможности",
-                   contact: "Контакты",
-                   getStarted: "Начать"
-               },
-               hero: {
-                   title: "Трансформируйте ваш бизнес с помощью ИИ",
-                   subtitle: "Ведущая компания по автоматизации ИИ, специализирующаяся на интеллектуальных ассистентах, агентах и чат-ботах, которые революционизируют взаимодействие с клиентами и бизнес-операции.",
-                   startJourney: "Начните с ИИ",
-                   exploreSolutions: "Изучить решения"
-               },
-               services: {
-                   title: "Наши ИИ-решения",
-                   assistants: {
-                       title: "ИИ-ассистенты",
-                       description: "Интеллектуальные виртуальные ассистенты, которые обрабатывают запросы клиентов, планируют встречи и обеспечивают круглосуточную поддержку."
-                   },
-                   agents: {
-                       title: "ИИ-агенты",
-                       description: "Автономные ИИ-агенты, которые выполняют сложные задачи, анализируют данные и принимают интеллектуальные решения."
-                   },
-                   chatbots: {
-                       title: "Умные чат-боты",
-                       description: "Продвинутый разговорный ИИ, который взаимодействует с клиентами, квалифицирует лиды и обеспечивает мгновенную поддержку."
-                   },
-                   automation: {
-                       title: "Автоматизация бизнеса",
-                       description: "Комплексные решения автоматизации, которые оптимизируют рабочие процессы, снижают затраты и повышают эффективность."
-                   },
-                   analytics: {
-                       title: "ИИ-аналитика",
-                       description: "Мощная аналитика и инсайты на основе ИИ для принятия решений на основе данных."
-                   },
-                   integration: {
-                       title: "Кастомная интеграция",
-                       description: "Бесшовная интеграция с вашими существующими системами и платформами."
-                   }
-               },
-               features: {
-                   title: "Почему выбирают наши ИИ-решения",
-                   fast: {
-                       title: "Молниеносное внедрение",
-                       description: "Запустите ваши ИИ-решения за дни, а не месяцы."
-                   },
-                   security: {
-                       title: "Корпоративная безопасность",
-                       description: "Банковский уровень безопасности с сквозным шифрованием."
-                   },
-                   scalable: {
-                       title: "Масштабируемые решения",
-                       description: "Наши ИИ-системы растут вместе с вашим бизнесом."
-                   },
-                   targeting: {
-                       title: "Точное таргетирование",
-                       description: "Продвинутые алгоритмы, которые понимают ваших клиентов."
-                   },
-                   learning: {
-                       title: "Непрерывное обучение",
-                       description: "ИИ становится умнее со временем, адаптируясь к вашим потребностям."
-                   },
-                   support: {
-                       title: "Поддержка 24/7",
-                       description: "Круглосуточная техническая поддержка и обслуживание."
-                   }
-               },
-               cta: {
-                   title: "Готовы революционизировать ваш бизнес?",
-                   subtitle: "Присоединяйтесь к сотням компаний, уже использующих наши ИИ-решения.",
-                   button: "Получить консультацию"
-               },
-               contact: {
-                   title: "Начните сегодня",
-                   info: {
-                       title: "Контактная информация",
-                       email: "Электронная почта",
-                       phone: "Телефон",
-                       whatsapp: "WhatsApp",
-                       hours: "Часы работы",
-                       weekdays: "Понедельник - Пятница: 9:00 - 18:00",
-                       saturday: "Суббота: 10:00 - 16:00"
-                   },
-                   form: {
-                       title: "Запросить консультацию",
-                       name: "Полное имя",
-                       email: "Email адрес",
-                       company: "Название компании",
-                       service: "Интересующая услуга",
-                       selectService: "Выберите услугу",
-                       message: "Сообщение",
-                       messagePlaceholder: "Расскажите о вашем проекте и требованиях...",
-                       submit: "Отправить сообщение"
-                   }
-               },
-               footer: {
-                   copyright: "© 2025 Volynskiy Business Automation. Все права защищены.",
-                   privacy: "Политика конфиденциальности",
-                   terms: "Условия использования",
-                   provider: "Поставщик услуг: Михаил Волынский<br>Название компании: Volynskiy Business Automation<br>Email: info@volynskiybusiness.com<br>Телефон: +972 058 512 1035<br>Адрес: Moshe Fliman St 4, Хайфа, Израиль"
-               }
-           },
-           he: {
-               logo: "פתרונות AI",
-               nav: {
-                   home: "בית",
-                   services: "שירותים",
-                   features: "תכונות",
-                   contact: "צור קשר",
-                   getStarted: "התחל עכשיו"
-               },
-               hero: {
-                   title: "שנה את העסק שלך עם AI",
-                   subtitle: "חברה מובילה באוטומציית AI המתמחה בעוזרים חכמים, סוכנים וצ'אטבוטים שמהפכים את חווית הלקוח ותפעול העסק.",
-                   startJourney: "התחל את מסע ה-AI",
-                   exploreSolutions: "חקור פתרונות"
-               },
-               services: {
-                   title: "פתרונות ה-AI שלנו",
-                   assistants: {
-                       title: "עוזרי AI",
-                       description: "עוזרים וירטואליים חכמים שמטפלים בפניות לקוחות, קובעים פגישות ומספקים תמיכה 24/7."
-                   },
-                   agents: {
-                       title: "סוכני AI",
-                       description: "סוכני AI אוטונומיים שמבצעים משימות מורכבות, מנתחים נתונים ומקבלים החלטות חכמות."
-                   },
-                   chatbots: {
-                       title: "צ'אטבוטים חכמים",
-                       description: "AI שיחתי מתקדם שמעורב עם לקוחות, מסנן לידים ומספק תמיכה מיידית."
-                   },
-                   automation: {
-                       title: "אוטומציה עסקית",
-                       description: "פתרונות אוטומציה מקצה לקצה שמייעלים תהליכי עבודה, מפחיתים עלויות ומגבירים יעילות."
-                   },
-                   analytics: {
-                       title: "אנליטיקת AI",
-                       description: "אנליטיקה עוצמתית ותובנות מבוססות AI לקבלת החלטות מבוססות נתונים."
-                   },
-                   integration: {
-                       title: "אינטגרציה מותאמת",
-                       description: "אינטגרציה חלקה עם המערכות והפלטפורמות הקיימות שלך."
-                   }
-               },
-               features: {
-                   title: "למה לבחור בפתרונות ה-AI שלנו",
-                   fast: {
-                       title: "יישום במהירות הבזק",
-                       description: "הפעל את פתרונות ה-AI שלך תוך ימים, לא חודשים."
-                   },
-                   security: {
-                       title: "אבטחה ארגונית",
-                       description: "אבטחה ברמה בנקאית עם הצפנה מקצה לקצה."
-                   },
-                   scalable: {
-                       title: "פתרונות ניתנים להרחבה",
-                       description: "מערכות ה-AI שלנו גדלות עם העסק שלך."
-                   },
-                   targeting: {
-                       title: "מיקוד מדויק",
-                       description: "אלגוריתמים מתקדמים שמבינים את הלקוחות שלך."
-                   },
-                   learning: {
-                       title: "למידה מתמשכת",
-                       description: "AI שהופך חכם יותר עם הזמן ומסתגל לצרכים שלך."
-                   },
-                   support: {
-                       title: "תמיכה 24/7",
-                       description: "תמיכה טכנית ותחזוקה מסביב לשעון."
-                   }
-               },
-               cta: {
-                   title: "מוכן להפוך את העסק שלך?",
-                   subtitle: "הצטרף למאות חברות שכבר משתמשות בפתרונות ה-AI שלנו.",
-                   button: "קבל ייעוץ חינם"
-               },
-               contact: {
-                   title: "התחל היום",
-                   info: {
-                       title: "פרטי יצירת קשר",
-                       email: "דוא״ל",
-                       phone: "טלפון",
-                       whatsapp: "WhatsApp",
-                       hours: "שעות פעילות",
-                       weekdays: "ראשון - חמישי: 9:00 - 18:00",
-                       saturday: "שישי: 10:00 - 16:00"
-                   },
-                   form: {
-                       title: "בקש ייעוץ",
-                       name: "שם מלא",
-                       email: "כתובת דוא״ל",
-                       company: "שם החברה",
-                       service: "שירות מבוקש",
-                       selectService: "בחר שירות",
-                       message: "הודעה",
-                       messagePlaceholder: "ספר לנו על הפרויקט והדרישות שלך...",
-                       submit: "שלח הודעה"
-                   }
-               },
-               footer: {
-                   copyright: "© 2025 Volynskiy Business Automation. כל הזכויות שמורות.",
-                   privacy: "מדיניות פרטיות",
-                   terms: "תנאי שימוש",
-                   provider: "ספק שירות: מיכאל וולינסקי<br>שם העסק: Volynskiy Business Automation<br>דוא״ל: info@volynskiybusiness.com<br>טלפון: +972 058 512 1035<br>כתובת: משה פלימן 4, חיפה, ישראל"
-               }
-           },
-           ar: {
-               logo: "حلول الذكاء الاصطناعي",
-               nav: {
-                   home: "الرئيسية",
-                   services: "الخدمات",
-                   features: "المميزات",
-                   contact: "اتصل بنا",
-                   getStarted: "ابدأ الآن"
-               },
-               hero: {
-                   title: "حوّل عملك بالذكاء الاصطناعي",
-                   subtitle: "شركة رائدة في أتمتة الذكاء الاصطناعي متخصصة في المساعدين الأذكياء والوكلاء وروبوتات الدردشة.",
-                   startJourney: "ابدأ رحلتك مع الذكاء الاصطناعي",
-                   exploreSolutions: "استكشف الحلول"
-               },
-               services: {
-                   title: "حلولنا بالذكاء الاصطناعي",
-                   assistants: {
-                       title: "مساعدو الذكاء الاصطناعي",
-                       description: "مساعدون افتراضيون أذكياء يتعاملون مع استفسارات العملاء ويحددون المواعيد ويقدمون الدعم على مدار الساعة."
-                   },
-                   agents: {
-                       title: "وكلاء الذكاء الاصطناعي",
-                       description: "وكلاء ذكاء اصطناعي مستقلون ينفذون المهام المعقدة ويحللون البيانات ويتخذون قرارات ذكية."
-                   },
-                   chatbots: {
-                       title: "روبوتات دردشة ذكية",
-                       description: "ذكاء اصطناعي محادثة متقدم يتفاعل مع العملاء ويؤهل العملاء المحتملين ويوفر دعمًا فوريًا."
-                   },
-                   automation: {
-                       title: "أتمتة الأعمال",
-                       description: "حلول أتمتة شاملة تبسط سير العمل وتقلل التكاليف وتزيد الكفاءة التشغيلية."
-                   },
-                   analytics: {
-                       title: "تحليلات الذكاء الاصطناعي",
-                       description: "تحليلات قوية ورؤى مدعومة بالذكاء الاصطناعي لاتخاذ قرارات مبنية على البيانات."
-                   },
-                   integration: {
-                       title: "تكامل مخصص",
-                       description: "تكامل سلس مع أنظمتك ومنصاتك الحالية."
-                   }
-               },
-               features: {
-                   title: "لماذا تختار حلولنا بالذكاء الاصطناعي",
-                   fast: {
-                       title: "تنفيذ بسرعة البرق",
-                       description: "احصل على حلول الذكاء الاصطناعي في أيام وليس شهور."
-                   },
-                   security: {
-                       title: "أمان على مستوى المؤسسات",
-                       description: "أمان على مستوى البنوك مع تشفير من طرف إلى طرف."
-                   },
-                   scalable: {
-                       title: "حلول قابلة للتوسع",
-                       description: "تنمو أنظمة الذكاء الاصطناعي لدينا مع عملك."
-                   },
-                   targeting: {
-                       title: "استهداف دقيق",
-                       description: "خوارزميات متقدمة تفهم عملاءك."
-                   },
-                   learning: {
-                       title: "تعلم مستمر",
-                       description: "ذكاء اصطناعي يصبح أكثر ذكاءً بمرور الوقت."
-                   },
-                   support: {
-                       title: "دعم 24/7",
-                       description: "دعم فني وصيانة على مدار الساعة."
-                   }
-               },
-               cta: {
-                   title: "مستعد لإحداث ثورة في عملك؟",
-                   subtitle: "انضم إلى مئات الشركات التي تستخدم حلولنا بالذكاء الاصطناعي.",
-                   button: "احصل على استشارة مجانية"
-               },
-               contact: {
-                   title: "ابدأ اليوم",
-                   info: {
-                       title: "معلومات الاتصال",
-                       email: "البريد الإلكتروني",
-                       phone: "الهاتف",
-                       whatsapp: "واتساب",
-                       hours: "ساعات العمل",
-                       weekdays: "الاثنين - الجمعة: 9:00 صباحًا - 6:00 مساءً",
-                       saturday: "السبت: 10:00 صباحًا - 4:00 مساءً"
-                   },
-                   form: {
-                       title: "طلب استشارة",
-                       name: "الاسم الكامل",
-                       email: "عنوان البريد الإلكتروني",
-                       company: "اسم الشركة",
-                       service: "الخدمة المطلوبة",
-                       selectService: "اختر خدمة",
-                       message: "الرسالة",
-                       messagePlaceholder: "أخبرنا عن مشروعك ومتطلباتك...",
-                       submit: "إرسال الرسالة"
-                   }
-               },
-               footer: {
-                   copyright: "© 2025 Volynskiy Business Automation. جميع الحقوق محفوظة.",
-                   privacy: "سياسة الخصوصية",
-                   terms: "شروط الخدمة",
-                   provider: "مقدم الخدمة: مايكل فولينسكي<br>اسم العمل: Volynskiy Business Automation<br>البريد الإلكتروني: info@volynskiybusiness.com<br>الهاتف: +972 058 512 1035<br>العنوان: Moshe Fliman St 4, حيفا, إسرائيل"
-               }
-           },
-           es: {
-               logo: "Soluciones IA",
-               nav: {
-                   home: "Inicio",
-                   services: "Servicios",
-                   features: "Características",
-                   contact: "Contacto",
-                   getStarted: "Comenzar"
-               },
-               hero: {
-                   title: "Transforma tu negocio con IA",
-                   subtitle: "Empresa líder en automatización de IA especializada en asistentes inteligentes, agentes y chatbots.",
-                   startJourney: "Comienza tu viaje con IA",
-                   exploreSolutions: "Explorar soluciones"
-               },
-               services: {
-                   title: "Nuestras soluciones de IA",
-                   assistants: {
-                       title: "Asistentes de IA",
-                       description: "Asistentes virtuales inteligentes que manejan consultas de clientes y brindan soporte 24/7."
-                   },
-                   agents: {
-                       title: "Agentes de IA",
-                       description: "Agentes de IA autónomos que realizan tareas complejas y toman decisiones inteligentes."
-                   },
-                   chatbots: {
-                       title: "Chatbots inteligentes",
-                       description: "IA conversacional avanzada que interactúa con clientes y proporciona soporte instantáneo."
-                   },
-                   automation: {
-                       title: "Automatización empresarial",
-                       description: "Soluciones de automatización integrales que optimizan flujos de trabajo y reducen costos."
-                   },
-                   analytics: {
-                       title: "Análisis de IA",
-                       description: "Análisis potentes e información impulsada por IA para tomar decisiones basadas en datos."
-                   },
-                   integration: {
-                       title: "Integración personalizada",
-                       description: "Integración perfecta con sus sistemas y plataformas existentes."
-                   }
-               },
-               features: {
-                   title: "Por qué elegir nuestras soluciones de IA",
-                   fast: {
-                       title: "Implementación ultrarrápida",
-                       description: "Ponga en marcha sus soluciones de IA en días, no meses."
-                   },
-                   security: {
-                       title: "Seguridad empresarial",
-                       description: "Seguridad de nivel bancario con cifrado de extremo a extremo."
-                   },
-                   scalable: {
-                       title: "Soluciones escalables",
-                       description: "Nuestros sistemas de IA crecen con su negocio."
-                   },
-                   targeting: {
-                       title: "Orientación precisa",
-                       description: "Algoritmos avanzados que entienden a sus clientes."
-                   },
-                   learning: {
-                       title: "Aprendizaje continuo",
-                       description: "IA que se vuelve más inteligente con el tiempo."
-                   },
-                   support: {
-                       title: "Soporte 24/7",
-                       description: "Soporte técnico y mantenimiento las 24 horas."
-                   }
-               },
-               cta: {
-                   title: "¿Listo para revolucionar tu negocio?",
-                   subtitle: "Únete a cientos de empresas que ya usan nuestras soluciones de IA.",
-                   button: "Obtener consulta gratuita"
-               },
-               contact: {
-                   title: "Comienza hoy",
-                   info: {
-                       title: "Información de contacto",
-                       email: "Correo electrónico",
-                       phone: "Teléfono",
-                       whatsapp: "WhatsApp",
-                       hours: "Horario comercial",
-                       weekdays: "Lunes - Viernes: 9:00 AM - 6:00 PM",
-                       saturday: "Sábado: 10:00 AM - 4:00 PM"
-                   },
-                   form: {
-                       title: "Solicitar consulta",
-                       name: "Nombre completo",
-                       email: "Dirección de correo",
-                       company: "Nombre de la empresa",
-                       service: "Servicio de interés",
-                       selectService: "Seleccionar un servicio",
-                       message: "Mensaje",
-                       messagePlaceholder: "Cuéntanos sobre tu proyecto y requisitos...",
-                       submit: "Enviar mensaje"
-                   }
-               },
-               footer: {
-                   copyright: "© 2025 Volynskiy Business Automation. Todos los derechos reservados.",
-                   privacy: "Política de privacidad",
-                   terms: "Términos de servicio",
-                   provider: "Proveedor de servicios: Michael Volynskiy<br>Nombre comercial: Volynskiy Business Automation<br>Correo: info@volynskiybusiness.com<br>Teléfono: +972 058 512 1035<br>Dirección: Moshe Fliman St 4, Haifa, Israel"
-               }
-           },
-           fr: {
-               logo: "Solutions IA",
-               nav: {
-                   home: "Accueil",
-                   services: "Services",
-                   features: "Fonctionnalités",
-                   contact: "Contact",
-                   getStarted: "Commencer"
-               },
-               hero: {
-                   title: "Transformez votre entreprise avec l'IA",
-                   subtitle: "Entreprise leader en automatisation IA spécialisée dans les assistants intelligents, agents et chatbots.",
-                   startJourney: "Commencez votre voyage IA",
-                   exploreSolutions: "Explorer les solutions"
-               },
-               services: {
-                   title: "Nos solutions IA",
-                   assistants: {
-                       title: "Assistants IA",
-                       description: "Assistants virtuels intelligents qui gèrent les demandes des clients et fournissent un support 24/7."
-                   },
-                   agents: {
-                       title: "Agents IA",
-                       description: "Agents IA autonomes qui effectuent des tâches complexes et prennent des décisions intelligentes."
-                   },
-                   chatbots: {
-                       title: "Chatbots intelligents",
-                       description: "IA conversationnelle avancée qui engage les clients et fournit un support instantané."
-                   },
-                   automation: {
-                       title: "Automatisation d'entreprise",
-                       description: "Solutions d'automatisation complètes qui rationalisent les flux de travail et réduisent les coûts."
-                   },
-                   analytics: {
-                       title: "Analyse IA",
-                       description: "Analyses puissantes et insights alimentés par l'IA pour prendre des décisions basées sur les données."
-                   },
-                   integration: {
-                       title: "Intégration personnalisée",
-                       description: "Intégration transparente avec vos systèmes et plateformes existants."
-                   }
-               },
-               features: {
-                   title: "Pourquoi choisir nos solutions IA",
-                   fast: {
-                       title: "Mise en œuvre ultra-rapide",
-                       description: "Lancez vos solutions IA en jours, pas en mois."
-                   },
-                   security: {
-                       title: "Sécurité d'entreprise",
-                       description: "Sécurité de niveau bancaire avec chiffrement de bout en bout."
-                   },
-                   scalable: {
-                       title: "Solutions évolutives",
-                       description: "Nos systèmes IA grandissent avec votre entreprise."
-                   },
-                   targeting: {
-                       title: "Ciblage de précision",
-                       description: "Algorithmes avancés qui comprennent vos clients."
-                   },
-                   learning: {
-                       title: "Apprentissage continu",
-                       description: "IA qui devient plus intelligente avec le temps."
-                   },
-                   support: {
-                       title: "Support 24/7",
-                       description: "Support technique et maintenance 24 heures sur 24."
-                   }
-               },
-               cta: {
-                   title: "Prêt à révolutionner votre entreprise ?",
-                   subtitle: "Rejoignez des centaines d'entreprises utilisant déjà nos solutions IA.",
-                   button: "Obtenir une consultation gratuite"
-               },
-               contact: {
-                   title: "Commencez aujourd'hui",
-                   info: {
-                       title: "Informations de contact",
-                       email: "E-mail",
-                       phone: "Téléphone",
-                       whatsapp: "WhatsApp",
-                       hours: "Heures d'ouverture",
-                       weekdays: "Lundi - Vendredi : 9h00 - 18h00",
-                       saturday: "Samedi : 10h00 - 16h00"
-                   },
-                   form: {
-                       title: "Demander une consultation",
-                       name: "Nom complet",
-                       email: "Adresse e-mail",
-                       company: "Nom de l'entreprise",
-                       service: "Service d'intérêt",
-                       selectService: "Sélectionnez un service",
-                       message: "Message",
-                       messagePlaceholder: "Parlez-nous de votre projet et de vos besoins...",
-                       submit: "Envoyer le message"
-                   }
-               },
-               footer: {
-                   copyright: "© 2025 Volynskiy Business Automation. Tous droits réservés.",
-                   privacy: "Politique de confidentialité",
-                   terms: "Conditions d'utilisation",
-                   provider: "Fournisseur de services : Michael Volynskiy<br>Nom commercial : Volynskiy Business Automation<br>E-mail : info@volynskiybusiness.com<br>Téléphone : +972 058 512 1035<br>Adresse : Moshe Fliman St 4, Haïfa, Israël"
-               }
-           },
-           de: {
-               logo: "KI-Lösungen",
-               nav: {
-                   home: "Startseite",
-                   services: "Dienstleistungen",
-                   features: "Funktionen",
-                   contact: "Kontakt",
-                   getStarted: "Loslegen"
-               },
-               hero: {
-                   title: "Transformieren Sie Ihr Geschäft mit KI",
-                   subtitle: "Führendes KI-Automatisierungsunternehmen spezialisiert auf intelligente Assistenten, Agenten und Chatbots.",
-                   startJourney: "Starten Sie Ihre KI-Reise",
-                   exploreSolutions: "Lösungen erkunden"
-               },
-               services: {
-                   title: "Unsere KI-Lösungen",
-                   assistants: {
-                       title: "KI-Assistenten",
-                       description: "Intelligente virtuelle Assistenten, die Kundenanfragen bearbeiten und rund um die Uhr Support bieten."
-                   },
-                   agents: {
-                       title: "KI-Agenten",
-                       description: "Autonome KI-Agenten, die komplexe Aufgaben ausführen und intelligente Entscheidungen treffen."
-                   },
-                   chatbots: {
-                       title: "Intelligente Chatbots",
-                       description: "Fortschrittliche Konversations-KI, die mit Kunden interagiert und sofortigen Support bietet."
-                   },
-                   automation: {
-                       title: "Geschäftsautomatisierung",
-                       description: "End-to-End-Automatisierungslösungen, die Arbeitsabläufe optimieren und Kosten senken."
-                   },
-                   analytics: {
-                       title: "KI-Analytik",
-                       description: "Leistungsstarke Analysen und KI-gestützte Einblicke für datengesteuerte Entscheidungen."
-                   },
-                   integration: {
-                       title: "Individuelle Integration",
-                       description: "Nahtlose Integration in Ihre bestehenden Systeme und Plattformen."
-                   }
-               },
-               features: {
-                   title: "Warum unsere KI-Lösungen wählen",
-                   fast: {
-                       title: "Blitzschnelle Implementierung",
-                       description: "Bringen Sie Ihre KI-Lösungen in Tagen, nicht Monaten, zum Laufen."
-                   },
-                   security: {
-                       title: "Unternehmenssicherheit",
-                       description: "Sicherheit auf Bankniveau mit End-to-End-Verschlüsselung."
-                   },
-                   scalable: {
-                       title: "Skalierbare Lösungen",
-                       description: "Unsere KI-Systeme wachsen mit Ihrem Unternehmen."
-                   },
-                   targeting: {
-                       title: "Präzise Zielgruppenansprache",
-                       description: "Fortschrittliche Algorithmen, die Ihre Kunden verstehen."
-                   },
-                   learning: {
-                       title: "Kontinuierliches Lernen",
-                       description: "KI, die mit der Zeit intelligenter wird."
-                   },
-                   support: {
-                       title: "24/7 Support",
-                       description: "Rund um die Uhr technischer Support und Wartung."
-                   }
-               },
-               cta: {
-                   title: "Bereit, Ihr Geschäft zu revolutionieren?",
-                   subtitle: "Schließen Sie sich Hunderten von Unternehmen an, die bereits unsere KI-Lösungen nutzen.",
-                   button: "Kostenlose Beratung erhalten"
-               },
-               contact: {
-                   title: "Beginnen Sie heute",
-                   info: {
-                       title: "Kontaktinformationen",
-                       email: "E-Mail",
-                       phone: "Telefon",
-                       whatsapp: "WhatsApp",
-                       hours: "Geschäftszeiten",
-                       weekdays: "Montag - Freitag: 9:00 - 18:00 Uhr",
-                       saturday: "Samstag: 10:00 - 16:00 Uhr"
-                   },
-                   form: {
-                       title: "Beratung anfordern",
-                       name: "Vollständiger Name",
-                       email: "E-Mail-Adresse",
-                       company: "Firmenname",
-                       service: "Service-Interesse",
-                       selectService: "Service auswählen",
-                       message: "Nachricht",
-                       messagePlaceholder: "Erzählen Sie uns von Ihrem Projekt und Ihren Anforderungen...",
-                       submit: "Nachricht senden"
-                   }
-               },
-               footer: {
-                   copyright: "© 2025 Volynskiy Business Automation. Alle Rechte vorbehalten.",
-                   privacy: "Datenschutzerklärung",
-                   terms: "Nutzungsbedingungen",
-                   provider: "Dienstleister: Michael Volynskiy<br>Firmenname: Volynskiy Business Automation<br>E-Mail: info@volynskiybusiness.com<br>Telefon: +972 058 512 1035<br>Adresse: Moshe Fliman St 4, Haifa, Israel"
-               }
-           },
-           en: {
-               logo: "AI Solutions",
-               nav: {
-                   home: "Home",
-                   services: "Services",
-                   features: "Features",
-                   contact: "Contact",
-                   getStarted: "Get Started"
-               },
-               hero: {
-                   title: "Transform Your Business with AI",
-                   subtitle: "Leading AI automation company specializing in intelligent assistants, agents, and chatbots that revolutionize customer engagement and business operations.",
-                   startJourney: "Start Your AI Journey",
-                   exploreSolutions: "Explore Solutions"
-               },
-               services: {
-                   title: "Our AI Solutions",
-                   assistants: {
-                       title: "AI Assistants",
-                       description: "Intelligent virtual assistants that handle customer inquiries, schedule appointments, and provide 24/7 support with human-like interactions."
-                   },
-                   agents: {
-                       title: "AI Agents",
-                       description: "Autonomous AI agents that perform complex tasks, analyze data, and make intelligent decisions to optimize your business processes."
-                   },
-                   chatbots: {
-                       title: "Smart Chatbots",
-                       description: "Advanced conversational AI that engages customers, qualifies leads, and provides instant support across multiple platforms."
-                   },
-                   automation: {
-                       title: "Business Automation",
-                       description: "End-to-end automation solutions that streamline workflows, reduce costs, and increase operational efficiency."
-                   },
-                   analytics: {
-                       title: "AI Analytics",
-                       description: "Powerful analytics and insights powered by AI to help you make data-driven decisions and optimize performance."
-                   },
-                   integration: {
-                       title: "Custom Integration",
-                       description: "Seamless integration with your existing systems and platforms for a unified AI-powered business ecosystem."
-                   }
-               },
-               features: {
-                   title: "Why Choose Our AI Solutions",
-                   fast: {
-                       title: "Lightning Fast Implementation",
-                       description: "Get your AI solutions up and running in days, not months, with our streamlined deployment process."
-                   },
-                   security: {
-                       title: "Enterprise Security",
-                       description: "Bank-level security with end-to-end encryption and compliance with industry standards."
-                   },
-                   scalable: {
-                       title: "Scalable Solutions",
-                       description: "Our AI systems grow with your business, handling increased workloads seamlessly."
-                   },
-                   targeting: {
-                       title: "Precision Targeting",
-                       description: "Advanced algorithms that understand your customers and deliver personalized experiences."
-                   },
-                   learning: {
-                       title: "Continuous Learning",
-                       description: "AI that gets smarter over time, adapting to your business needs and customer preferences."
-                   },
-                   support: {
-                       title: "24/7 Support",
-                       description: "Round-the-clock technical support and maintenance to ensure optimal performance."
-                   }
-               },
-               cta: {
-                   title: "Ready to Revolutionize Your Business?",
-                   subtitle: "Join hundreds of companies already using our AI solutions to boost efficiency and customer satisfaction.",
-                   button: "Get Free Consultation"
-               },
-               contact: {
-                   title: "Get Started Today",
-                   info: {
-                       title: "Contact Information",
-                       email: "Email",
-                       phone: "Phone",
-                       whatsapp: "WhatsApp",
-                       hours: "Business Hours",
-                       weekdays: "Monday - Friday: 9:00 AM - 6:00 PM",
-                       saturday: "Saturday: 10:00 AM - 4:00 PM"
-                   },
-                   form: {
-                       title: "Request a Consultation",
-                       name: "Full Name",
-                       email: "Email Address",
-                       company: "Company Name",
-                       service: "Service Interest",
-                       selectService: "Select a service",
-                       message: "Message",
-                       messagePlaceholder: "Tell us about your project and requirements...",
-                       submit: "Send Message"
-                   }
-               },
-               footer: {
-                   copyright: "© 2025 Volynskiy Business Automation. All rights reserved.",
-                   privacy: "Privacy Policy",
-                   terms: "Terms of Service",
-                   provider: "Service Provider: Michael Volynskiy<br>Business Name: Volynskiy Business Automation<br>Email: info@volynskiybusiness.com<br>Phone: +972 058 512 1035<br>Address: Moshe Fliman St 4, Haifa, Israel"
-               }
-           }
-       };
+    <script>
+        // Multi-language support with automatic detection
+        const translations = {
+            ru: {
+                logo: "AI Решения",
+                nav: {
+                    home: "Главная",
+                    services: "Услуги",
+                    features: "Возможности",
+                    contact: "Контакты",
+                    getStarted: "Начать"
+                },
+                hero: {
+                    title: "Трансформируйте ваш бизнес с помощью ИИ",
+                    subtitle: "Ведущая компания по автоматизации ИИ, специализирующаяся на интеллектуальных ассистентах, агентах и чат-ботах, которые революционизируют взаимодействие с клиентами и бизнес-операции.",
+                    startJourney: "Начните с ИИ",
+                    exploreSolutions: "Изучить решения"
+                },
+                services: {
+                    title: "Наши ИИ-решения",
+                    assistants: {
+                        title: "ИИ-ассистенты",
+                        description: "Интеллектуальные виртуальные ассистенты, которые обрабатывают запросы клиентов, планируют встречи и обеспечивают круглосуточную поддержку."
+                    },
+                    agents: {
+                        title: "ИИ-агенты",
+                        description: "Автономные ИИ-агенты, которые выполняют сложные задачи, анализируют данные и принимают интеллектуальные решения."
+                    },
+                    chatbots: {
+                        title: "Умные чат-боты",
+                        description: "Продвинутый разговорный ИИ, который взаимодействует с клиентами, квалифицирует лиды и обеспечивает мгновенную поддержку."
+                    },
+                    automation: {
+                        title: "Автоматизация бизнеса",
+                        description: "Комплексные решения автоматизации, которые оптимизируют рабочие процессы, снижают затраты и повышают эффективность."
+                    },
+                    analytics: {
+                        title: "ИИ-аналитика",
+                        description: "Мощная аналитика и инсайты на основе ИИ для принятия решений на основе данных."
+                    },
+                    integration: {
+                        title: "Кастомная интеграция",
+                        description: "Бесшовная интеграция с вашими существующими системами и платформами."
+                    }
+                },
+                features: {
+                    title: "Почему выбирают наши ИИ-решения",
+                    fast: {
+                        title: "Молниеносное внедрение",
+                        description: "Запустите ваши ИИ-решения за дни, а не месяцы."
+                    },
+                    security: {
+                        title: "Корпоративная безопасность",
+                        description: "Банковский уровень безопасности с сквозным шифрованием."
+                    },
+                    scalable: {
+                        title: "Масштабируемые решения",
+                        description: "Наши ИИ-системы растут вместе с вашим бизнесом."
+                    },
+                    targeting: {
+                        title: "Точное таргетирование",
+                        description: "Продвинутые алгоритмы, которые понимают ваших клиентов."
+                    },
+                    learning: {
+                        title: "Непрерывное обучение",
+                        description: "ИИ становится умнее со временем, адаптируясь к вашим потребностям."
+                    },
+                    support: {
+                        title: "Поддержка 24/7",
+                        description: "Круглосуточная техническая поддержка и обслуживание."
+                    }
+                },
+                cta: {
+                    title: "Готовы революционизировать ваш бизнес?",
+                    subtitle: "Присоединяйтесь к сотням компаний, уже использующих наши ИИ-решения.",
+                    button: "Получить консультацию"
+                },
+                contact: {
+                    title: "Начните сегодня",
+                    info: {
+                        title: "Контактная информация",
+                        email: "Электронная почта",
+                        phone: "Телефон",
+                        whatsapp: "WhatsApp",
+                        hours: "Часы работы",
+                        weekdays: "Понедельник - Пятница: 9:00 - 18:00",
+                        saturday: "Суббота: 10:00 - 16:00"
+                    },
+                    form: {
+                        title: "Запросить консультацию",
+                        name: "Полное имя",
+                        email: "Email адрес",
+                        company: "Название компании",
+                        service: "Интересующая услуга",
+                        selectService: "Выберите услугу",
+                        message: "Сообщение",
+                        messagePlaceholder: "Расскажите о вашем проекте и требованиях...",
+                        submit: "Отправить сообщение"
+                    }
+                },
+                footer: {
+                    copyright: "© 2025 Volynskiy Business Automation. Все права защищены.",
+                    privacy: "Политика конфиденциальности",
+                    terms: "Условия использования",
+                    dataDeletion: "Удаление данных",
+                    provider: "Поставщик услуг: Михаил Волынский<br>Название компании: Volynskiy Business Automation<br>Email: info@volynskiybusiness.com<br>Телефон: +972 058 512 1035<br>Адрес: Moshe Fliman St 4, Хайфа, Израиль"
+                }
+            },
+            he: {
+                logo: "פתרונות AI",
+                nav: {
+                    home: "בית",
+                    services: "שירותים",
+                    features: "תכונות",
+                    contact: "צור קשר",
+                    getStarted: "התחל עכשיו"
+                },
+                hero: {
+                    title: "שנה את העסק שלך עם AI",
+                    subtitle: "חברה מובילה באוטומציית AI המתמחה בעוזרים חכמים, סוכנים וצ'אטבוטים שמהפכים את חווית הלקוח ותפעול העסק.",
+                    startJourney: "התחל את מסע ה-AI",
+                    exploreSolutions: "חקור פתרונות"
+                },
+                services: {
+                    title: "פתרונות ה-AI שלנו",
+                    assistants: {
+                        title: "עוזרי AI",
+                        description: "עוזרים וירטואליים חכמים שמטפלים בפניות לקוחות, קובעים פגישות ומספקים תמיכה 24/7."
+                    },
+                    agents: {
+                        title: "סוכני AI",
+                        description: "סוכני AI אוטונומיים שמבצעים משימות מורכבות, מנתחים נתונים ומקבלים החלטות חכמות."
+                    },
+                    chatbots: {
+                        title: "צ'אטבוטים חכמים",
+                        description: "AI שיחתי מתקדם שמעורב עם לקוחות, מסנן לידים ומספק תמיכה מיידית."
+                    },
+                    automation: {
+                        title: "אוטומציה עסקית",
+                        description: "פתרונות אוטומציה מקצה לקצה שמייעלים תהליכי עבודה, מפחיתים עלויות ומגבירים יעילות."
+                    },
+                    analytics: {
+                        title: "אנליטיקת AI",
+                        description: "אנליטיקה עוצמתית ותובנות מבוססות AI לקבלת החלטות מבוססות נתונים."
+                    },
+                    integration: {
+                        title: "אינטגרציה מותאמת",
+                        description: "אינטגרציה חלקה עם המערכות והפלטפורמות הקיימות שלך."
+                    }
+                },
+                features: {
+                    title: "למה לבחור בפתרונות ה-AI שלנו",
+                    fast: {
+                        title: "יישום במהירות הבזק",
+                        description: "הפעל את פתרונות ה-AI שלך תוך ימים, לא חודשים."
+                    },
+                    security: {
+                        title: "אבטחה ארגונית",
+                        description: "אבטחה ברמה בנקאית עם הצפנה מקצה לקצה."
+                    },
+                    scalable: {
+                        title: "פתרונות ניתנים להרחבה",
+                        description: "מערכות ה-AI שלנו גדלות עם העסק שלך."
+                    },
+                    targeting: {
+                        title: "מיקוד מדויק",
+                        description: "אלגוריתמים מתקדמים שמבינים את הלקוחות שלך."
+                    },
+                    learning: {
+                        title: "למידה מתמשכת",
+                        description: "AI שהופך חכם יותר עם הזמן ומסתגל לצרכים שלך."
+                    },
+                    support: {
+                        title: "תמיכה 24/7",
+                        description: "תמיכה טכנית ותחזוקה מסביב לשעון."
+                    }
+                },
+                cta: {
+                    title: "מוכן להפוך את העסק שלך?",
+                    subtitle: "הצטרף למאות חברות שכבר משתמשות בפתרונות ה-AI שלנו.",
+                    button: "קבל ייעוץ חינם"
+                },
+                contact: {
+                    title: "התחל היום",
+                    info: {
+                        title: "פרטי יצירת קשר",
+                        email: "דוא״ל",
+                        phone: "טלפון",
+                        whatsapp: "WhatsApp",
+                        hours: "שעות פעילות",
+                        weekdays: "ראשון - חמישי: 9:00 - 18:00",
+                        saturday: "שישי: 10:00 - 16:00"
+                    },
+                    form: {
+                        title: "בקש ייעוץ",
+                        name: "שם מלא",
+                        email: "כתובת דוא״ל",
+                        company: "שם החברה",
+                        service: "שירות מבוקש",
+                        selectService: "בחר שירות",
+                        message: "הודעה",
+                        messagePlaceholder: "ספר לנו על הפרויקט והדרישות שלך...",
+                        submit: "שלח הודעה"
+                    }
+                },
+                footer: {
+                    copyright: "© 2025 Volynskiy Business Automation. כל הזכויות שמורות.",
+                    privacy: "מדיניות פרטיות",
+                    terms: "תנאי שימוש",
+                    dataDeletion: "מחיקת נתונים",
+                    provider: "ספק שירות: מיכאל וולינסקי<br>שם העסק: Volynskiy Business Automation<br>דוא״ל: info@volynskiybusiness.com<br>טלפון: +972 058 512 1035<br>כתובת: משה פלימן 4, חיפה, ישראל"
+                }
+            },
+            ar: {
+                logo: "حلول الذكاء الاصطناعي",
+                nav: {
+                    home: "الرئيسية",
+                    services: "الخدمات",
+                    features: "المميزات",
+                    contact: "اتصل بنا",
+                    getStarted: "ابدأ الآن"
+                },
+                hero: {
+                    title: "حوّل عملك بالذكاء الاصطناعي",
+                    subtitle: "شركة رائدة في أتمتة الذكاء الاصطناعي متخصصة في المساعدين الأذكياء والوكلاء وروبوتات الدردشة.",
+                    startJourney: "ابدأ رحلتك مع الذكاء الاصطناعي",
+                    exploreSolutions: "استكشف الحلول"
+                },
+                services: {
+                    title: "حلولنا بالذكاء الاصطناعي",
+                    assistants: {
+                        title: "مساعدو الذكاء الاصطناعي",
+                        description: "مساعدون افتراضيون أذكياء يتعاملون مع استفسارات العملاء ويحددون المواعيد ويقدمون الدعم على مدار الساعة."
+                    },
+                    agents: {
+                        title: "وكلاء الذكاء الاصطناعي",
+                        description: "وكلاء ذكاء اصطناعي مستقلون ينفذون المهام المعقدة ويحللون البيانات ويتخذون قرارات ذكية."
+                    },
+                    chatbots: {
+                        title: "روبوتات دردشة ذكية",
+                        description: "ذكاء اصطناعي محادثة متقدم يتفاعل مع العملاء ويؤهل العملاء المحتملين ويوفر دعمًا فوريًا."
+                    },
+                    automation: {
+                        title: "أتمتة الأعمال",
+                        description: "حلول أتمتة شاملة تبسط سير العمل وتقلل التكاليف وتزيد الكفاءة التشغيلية."
+                    },
+                    analytics: {
+                        title: "تحليلات الذكاء الاصطناعي",
+                        description: "تحليلات قوية ورؤى مدعومة بالذكاء الاصطناعي لاتخاذ قرارات مبنية على البيانات."
+                    },
+                    integration: {
+                        title: "تكامل مخصص",
+                        description: "تكامل سلس مع أنظمتك ومنصاتك الحالية."
+                    }
+                },
+                features: {
+                    title: "لماذا تختار حلولنا بالذكاء الاصطناعي",
+                    fast: {
+                        title: "تنفيذ بسرعة البرق",
+                        description: "احصل على حلول الذكاء الاصطناعي في أيام وليس شهور."
+                    },
+                    security: {
+                        title: "أمان على مستوى المؤسسات",
+                        description: "أمان على مستوى البنوك مع تشفير من طرف إلى طرف."
+                    },
+                    scalable: {
+                        title: "حلول قابلة للتوسع",
+                        description: "تنمو أنظمة الذكاء الاصطناعي لدينا مع عملك."
+                    },
+                    targeting: {
+                        title: "استهداف دقيق",
+                        description: "خوارزميات متقدمة تفهم عملاءك."
+                    },
+                    learning: {
+                        title: "تعلم مستمر",
+                        description: "ذكاء اصطناعي يصبح أكثر ذكاءً بمرور الوقت."
+                    },
+                    support: {
+                        title: "دعم 24/7",
+                        description: "دعم فني وصيانة على مدار الساعة."
+                    }
+                },
+                cta: {
+                    title: "مستعد لإحداث ثورة في عملك؟",
+                    subtitle: "انضم إلى مئات الشركات التي تستخدم حلولنا بالذكاء الاصطناعي.",
+                    button: "احصل على استشارة مجانية"
+                },
+                contact: {
+                    title: "ابدأ اليوم",
+                    info: {
+                        title: "معلومات الاتصال",
+                        email: "البريد الإلكتروني",
+                        phone: "الهاتف",
+                        whatsapp: "واتساب",
+                        hours: "ساعات العمل",
+                        weekdays: "الاثنين - الجمعة: 9:00 صباحًا - 6:00 مساءً",
+                        saturday: "السبت: 10:00 صباحًا - 4:00 مساءً"
+                    },
+                    form: {
+                        title: "طلب استشارة",
+                        name: "الاسم الكامل",
+                        email: "عنوان البريد الإلكتروني",
+                        company: "اسم الشركة",
+                        service: "الخدمة المطلوبة",
+                        selectService: "اختر خدمة",
+                        message: "الرسالة",
+                        messagePlaceholder: "أخبرنا عن مشروعك ومتطلباتك...",
+                        submit: "إرسال الرسالة"
+                    }
+                },
+                footer: {
+                    copyright: "© 2025 Volynskiy Business Automation. جميع الحقوق محفوظة.",
+                    privacy: "سياسة الخصوصية",
+                    terms: "شروط الخدمة",
+                    dataDeletion: "حذف البيانات",
+                    provider: "مقدم الخدمة: مايكل فولينسكي<br>اسم العمل: Volynskiy Business Automation<br>البريد الإلكتروني: info@volynskiybusiness.com<br>الهاتف: +972 058 512 1035<br>العنوان: Moshe Fliman St 4, حيفا, إسرائيل"
+                }
+            },
+            es: {
+                logo: "Soluciones IA",
+                nav: {
+                    home: "Inicio",
+                    services: "Servicios",
+                    features: "Características",
+                    contact: "Contacto",
+                    getStarted: "Comenzar"
+                },
+                hero: {
+                    title: "Transforma tu negocio con IA",
+                    subtitle: "Empresa líder en automatización de IA especializada en asistentes inteligentes, agentes y chatbots.",
+                    startJourney: "Comienza tu viaje con IA",
+                    exploreSolutions: "Explorar soluciones"
+                },
+                services: {
+                    title: "Nuestras soluciones de IA",
+                    assistants: {
+                        title: "Asistentes de IA",
+                        description: "Asistentes virtuales inteligentes que manejan consultas de clientes y brindan soporte 24/7."
+                    },
+                    agents: {
+                        title: "Agentes de IA",
+                        description: "Agentes de IA autónomos que realizan tareas complejas y toman decisiones inteligentes."
+                    },
+                    chatbots: {
+                        title: "Chatbots inteligentes",
+                        description: "IA conversacional avanzada que interactúa con clientes y proporciona soporte instantáneo."
+                    },
+                    automation: {
+                        title: "Automatización empresarial",
+                        description: "Soluciones de automatización integrales que optimizan flujos de trabajo y reducen costos."
+                    },
+                    analytics: {
+                        title: "Análisis de IA",
+                        description: "Análisis potentes e información impulsada por IA para tomar decisiones basadas en datos."
+                    },
+                    integration: {
+                        title: "Integración personalizada",
+                        description: "Integración perfecta con sus sistemas y plataformas existentes."
+                    }
+                },
+                features: {
+                    title: "Por qué elegir nuestras soluciones de IA",
+                    fast: {
+                        title: "Implementación ultrarrápida",
+                        description: "Ponga en marcha sus soluciones de IA en días, no meses."
+                    },
+                    security: {
+                        title: "Seguridad empresarial",
+                        description: "Seguridad de nivel bancario con cifrado de extremo a extremo."
+                    },
+                    scalable: {
+                        title: "Soluciones escalables",
+                        description: "Nuestros sistemas de IA crecen con su negocio."
+                    },
+                    targeting: {
+                        title: "Orientación precisa",
+                        description: "Algoritmos avanzados que entienden a sus clientes."
+                    },
+                    learning: {
+                        title: "Aprendizaje continuo",
+                        description: "IA que se vuelve más inteligente con el tiempo."
+                    },
+                    support: {
+                        title: "Soporte 24/7",
+                        description: "Soporte técnico y mantenimiento las 24 horas."
+                    }
+                },
+                cta: {
+                    title: "¿Listo para revolucionar tu negocio?",
+                    subtitle: "Únete a cientos de empresas que ya usan nuestras soluciones de IA.",
+                    button: "Obtener consulta gratuita"
+                },
+                contact: {
+                    title: "Comienza hoy",
+                    info: {
+                        title: "Información de contacto",
+                        email: "Correo electrónico",
+                        phone: "Teléfono",
+                        whatsapp: "WhatsApp",
+                        hours: "Horario comercial",
+                        weekdays: "Lunes - Viernes: 9:00 AM - 6:00 PM",
+                        saturday: "Sábado: 10:00 AM - 4:00 PM"
+                    },
+                    form: {
+                        title: "Solicitar consulta",
+                        name: "Nombre completo",
+                        email: "Dirección de correo",
+                        company: "Nombre de la empresa",
+                        service: "Servicio de interés",
+                        selectService: "Seleccionar un servicio",
+                        message: "Mensaje",
+                        messagePlaceholder: "Cuéntanos sobre tu proyecto y requisitos...",
+                        submit: "Enviar mensaje"
+                    }
+                },
+                footer: {
+                    copyright: "© 2025 Volynskiy Business Automation. Todos los derechos reservados.",
+                    privacy: "Política de privacidad",
+                    terms: "Términos de servicio",
+                    dataDeletion: "Eliminación de datos",
+                    provider: "Proveedor de servicios: Michael Volynskiy<br>Nombre comercial: Volynskiy Business Automation<br>Correo: info@volynskiybusiness.com<br>Teléfono: +972 058 512 1035<br>Dirección: Moshe Fliman St 4, Haifa, Israel"
+                }
+            },
+            fr: {
+                logo: "Solutions IA",
+                nav: {
+                    home: "Accueil",
+                    services: "Services",
+                    features: "Fonctionnalités",
+                    contact: "Contact",
+                    getStarted: "Commencer"
+                },
+                hero: {
+                    title: "Transformez votre entreprise avec l'IA",
+                    subtitle: "Entreprise leader en automatisation IA spécialisée dans les assistants intelligents, agents et chatbots.",
+                    startJourney: "Commencez votre voyage IA",
+                    exploreSolutions: "Explorer les solutions"
+                },
+                services: {
+                    title: "Nos solutions IA",
+                    assistants: {
+                        title: "Assistants IA",
+                        description: "Assistants virtuels intelligents qui gèrent les demandes des clients et fournissent un support 24/7."
+                    },
+                    agents: {
+                        title: "Agents IA",
+                        description: "Agents IA autonomes qui effectuent des tâches complexes et prennent des décisions intelligentes."
+                    },
+                    chatbots: {
+                        title: "Chatbots intelligents",
+                        description: "IA conversationnelle avancée qui engage les clients et fournit un support instantané."
+                    },
+                    automation: {
+                        title: "Automatisation d'entreprise",
+                        description: "Solutions d'automatisation complètes qui rationalisent les flux de travail et réduisent les coûts."
+                    },
+                    analytics: {
+                        title: "Analyse IA",
+                        description: "Analyses puissantes et insights alimentés par l'IA pour prendre des décisions basées sur les données."
+                    },
+                    integration: {
+                        title: "Intégration personnalisée",
+                        description: "Intégration transparente avec vos systèmes et plateformes existants."
+                    }
+                },
+                features: {
+                    title: "Pourquoi choisir nos solutions IA",
+                    fast: {
+                        title: "Mise en œuvre ultra-rapide",
+                        description: "Lancez vos solutions IA en jours, pas en mois."
+                    },
+                    security: {
+                        title: "Sécurité d'entreprise",
+                        description: "Sécurité de niveau bancaire avec chiffrement de bout en bout."
+                    },
+                    scalable: {
+                        title: "Solutions évolutives",
+                        description: "Nos systèmes IA grandissent avec votre entreprise."
+                    },
+                    targeting: {
+                        title: "Ciblage de précision",
+                        description: "Algorithmes avancés qui comprennent vos clients."
+                    },
+                    learning: {
+                        title: "Apprentissage continu",
+                        description: "IA qui devient plus intelligente avec le temps."
+                    },
+                    support: {
+                        title: "Support 24/7",
+                        description: "Support technique et maintenance 24 heures sur 24."
+                    }
+                },
+                cta: {
+                    title: "Prêt à révolutionner votre entreprise ?",
+                    subtitle: "Rejoignez des centaines d'entreprises utilisant déjà nos solutions IA.",
+                    button: "Obtenir une consultation gratuite"
+                },
+                contact: {
+                    title: "Commencez aujourd'hui",
+                    info: {
+                        title: "Informations de contact",
+                        email: "E-mail",
+                        phone: "Téléphone",
+                        whatsapp: "WhatsApp",
+                        hours: "Heures d'ouverture",
+                        weekdays: "Lundi - Vendredi : 9h00 - 18h00",
+                        saturday: "Samedi : 10h00 - 16h00"
+                    },
+                    form: {
+                        title: "Demander une consultation",
+                        name: "Nom complet",
+                        email: "Adresse e-mail",
+                        company: "Nom de l'entreprise",
+                        service: "Service d'intérêt",
+                        selectService: "Sélectionnez un service",
+                        message: "Message",
+                        messagePlaceholder: "Parlez-nous de votre projet et de vos besoins...",
+                        submit: "Envoyer le message"
+                    }
+                },
+                footer: {
+                    copyright: "© 2025 Volynskiy Business Automation. Tous droits réservés.",
+                    privacy: "Politique de confidentialité",
+                    terms: "Conditions d'utilisation",
+                    dataDeletion: "Suppression des données",
+                    provider: "Fournisseur de services : Michael Volynskiy<br>Nom commercial : Volynskiy Business Automation<br>E-mail : info@volynskiybusiness.com<br>Téléphone : +972 058 512 1035<br>Adresse : Moshe Fliman St 4, Haïfa, Israël"
+                }
+            },
+            de: {
+                logo: "KI-Lösungen",
+                nav: {
+                    home: "Startseite",
+                    services: "Dienstleistungen",
+                    features: "Funktionen",
+                    contact: "Kontakt",
+                    getStarted: "Loslegen"
+                },
+                hero: {
+                    title: "Transformieren Sie Ihr Geschäft mit KI",
+                    subtitle: "Führendes KI-Automatisierungsunternehmen spezialisiert auf intelligente Assistenten, Agenten und Chatbots.",
+                    startJourney: "Starten Sie Ihre KI-Reise",
+                    exploreSolutions: "Lösungen erkunden"
+                },
+                services: {
+                    title: "Unsere KI-Lösungen",
+                    assistants: {
+                        title: "KI-Assistenten",
+                        description: "Intelligente virtuelle Assistenten, die Kundenanfragen bearbeiten und rund um die Uhr Support bieten."
+                    },
+                    agents: {
+                        title: "KI-Agenten",
+                        description: "Autonome KI-Agenten, die komplexe Aufgaben ausführen und intelligente Entscheidungen treffen."
+                    },
+                    chatbots: {
+                        title: "Intelligente Chatbots",
+                        description: "Fortschrittliche Konversations-KI, die mit Kunden interagiert und sofortigen Support bietet."
+                    },
+                    automation: {
+                        title: "Geschäftsautomatisierung",
+                        description: "End-to-End-Automatisierungslösungen, die Arbeitsabläufe optimieren und Kosten senken."
+                    },
+                    analytics: {
+                        title: "KI-Analytik",
+                        description: "Leistungsstarke Analysen und KI-gestützte Einblicke für datengesteuerte Entscheidungen."
+                    },
+                    integration: {
+                        title: "Individuelle Integration",
+                        description: "Nahtlose Integration in Ihre bestehenden Systeme und Plattformen."
+                    }
+                },
+                features: {
+                    title: "Warum unsere KI-Lösungen wählen",
+                    fast: {
+                        title: "Blitzschnelle Implementierung",
+                        description: "Bringen Sie Ihre KI-Lösungen in Tagen, nicht Monaten, zum Laufen."
+                    },
+                    security: {
+                        title: "Unternehmenssicherheit",
+                        description: "Sicherheit auf Bankniveau mit End-to-End-Verschlüsselung."
+                    },
+                    scalable: {
+                        title: "Skalierbare Lösungen",
+                        description: "Unsere KI-Systeme wachsen mit Ihrem Unternehmen."
+                    },
+                    targeting: {
+                        title: "Präzise Zielgruppenansprache",
+                        description: "Fortschrittliche Algorithmen, die Ihre Kunden verstehen."
+                    },
+                    learning: {
+                        title: "Kontinuierliches Lernen",
+                        description: "KI, die mit der Zeit intelligenter wird."
+                    },
+                    support: {
+                        title: "24/7 Support",
+                        description: "Rund um die Uhr technischer Support und Wartung."
+                    }
+                },
+                cta: {
+                    title: "Bereit, Ihr Geschäft zu revolutionieren?",
+                    subtitle: "Schließen Sie sich Hunderten von Unternehmen an, die bereits unsere KI-Lösungen nutzen.",
+                    button: "Kostenlose Beratung erhalten"
+                },
+                contact: {
+                    title: "Beginnen Sie heute",
+                    info: {
+                        title: "Kontaktinformationen",
+                        email: "E-Mail",
+                        phone: "Telefon",
+                        whatsapp: "WhatsApp",
+                        hours: "Geschäftszeiten",
+                        weekdays: "Montag - Freitag: 9:00 - 18:00 Uhr",
+                        saturday: "Samstag: 10:00 - 16:00 Uhr"
+                    },
+                    form: {
+                        title: "Beratung anfordern",
+                        name: "Vollständiger Name",
+                        email: "E-Mail-Adresse",
+                        company: "Firmenname",
+                        service: "Service-Interesse",
+                        selectService: "Service auswählen",
+                        message: "Nachricht",
+                        messagePlaceholder: "Erzählen Sie uns von Ihrem Projekt und Ihren Anforderungen...",
+                        submit: "Nachricht senden"
+                    }
+                },
+                footer: {
+                    copyright: "© 2025 Volynskiy Business Automation. Alle Rechte vorbehalten.",
+                    privacy: "Datenschutzerklärung",
+                    terms: "Nutzungsbedingungen",
+                    dataDeletion: "Datenlöschung",
+                    provider: "Dienstleister: Michael Volynskiy<br>Firmenname: Volynskiy Business Automation<br>E-Mail: info@volynskiybusiness.com<br>Telefon: +972 058 512 1035<br>Adresse: Moshe Fliman St 4, Haifa, Israel"
+                }
+            },
+            en: {
+                logo: "AI Solutions",
+                nav: {
+                    home: "Home",
+                    services: "Services",
+                    features: "Features",
+                    contact: "Contact",
+                    getStarted: "Get Started"
+                },
+                hero: {
+                    title: "Transform Your Business with AI",
+                    subtitle: "Leading AI automation company specializing in intelligent assistants, agents, and chatbots that revolutionize customer engagement and business operations.",
+                    startJourney: "Start Your AI Journey",
+                    exploreSolutions: "Explore Solutions"
+                },
+                services: {
+                    title: "Our AI Solutions",
+                    assistants: {
+                        title: "AI Assistants",
+                        description: "Intelligent virtual assistants that handle customer inquiries, schedule appointments, and provide 24/7 support with human-like interactions."
+                    },
+                    agents: {
+                        title: "AI Agents",
+                        description: "Autonomous AI agents that perform complex tasks, analyze data, and make intelligent decisions to optimize your business processes."
+                    },
+                    chatbots: {
+                        title: "Smart Chatbots",
+                        description: "Advanced conversational AI that engages customers, qualifies leads, and provides instant support across multiple platforms."
+                    },
+                    automation: {
+                        title: "Business Automation",
+                        description: "End-to-end automation solutions that streamline workflows, reduce costs, and increase operational efficiency."
+                    },
+                    analytics: {
+                        title: "AI Analytics",
+                        description: "Powerful analytics and insights powered by AI to help you make data-driven decisions and optimize performance."
+                    },
+                    integration: {
+                        title: "Custom Integration",
+                        description: "Seamless integration with your existing systems and platforms for a unified AI-powered business ecosystem."
+                    }
+                },
+                features: {
+                    title: "Why Choose Our AI Solutions",
+                    fast: {
+                        title: "Lightning Fast Implementation",
+                        description: "Get your AI solutions up and running in days, not months, with our streamlined deployment process."
+                    },
+                    security: {
+                        title: "Enterprise Security",
+                        description: "Bank-level security with end-to-end encryption and compliance with industry standards."
+                    },
+                    scalable: {
+                        title: "Scalable Solutions",
+                        description: "Our AI systems grow with your business, handling increased workloads seamlessly."
+                    },
+                    targeting: {
+                        title: "Precision Targeting",
+                        description: "Advanced algorithms that understand your customers and deliver personalized experiences."
+                    },
+                    learning: {
+                        title: "Continuous Learning",
+                        description: "AI that gets smarter over time, adapting to your business needs and customer preferences."
+                    },
+                    support: {
+                        title: "24/7 Support",
+                        description: "Round-the-clock technical support and maintenance to ensure optimal performance."
+                    }
+                },
+                cta: {
+                    title: "Ready to Revolutionize Your Business?",
+                    subtitle: "Join hundreds of companies already using our AI solutions to boost efficiency and customer satisfaction.",
+                    button: "Get Free Consultation"
+                },
+                contact: {
+                    title: "Get Started Today",
+                    info: {
+                        title: "Contact Information",
+                        email: "Email",
+                        phone: "Phone",
+                        whatsapp: "WhatsApp",
+                        hours: "Business Hours",
+                        weekdays: "Monday - Friday: 9:00 AM - 6:00 PM",
+                        saturday: "Saturday: 10:00 AM - 4:00 PM"
+                    },
+                    form: {
+                        title: "Request a Consultation",
+                        name: "Full Name",
+                        email: "Email Address",
+                        company: "Company Name",
+                        service: "Service Interest",
+                        selectService: "Select a service",
+                        message: "Message",
+                        messagePlaceholder: "Tell us about your project and requirements...",
+                        submit: "Send Message"
+                    }
+                },
+                footer: {
+                    copyright: "© 2025 Volynskiy Business Automation. All rights reserved.",
+                    privacy: "Privacy Policy",
+                    terms: "Terms of Service",
+                    dataDeletion: "Data Deletion",
+                    provider: "Service Provider: Michael Volynskiy<br>Business Name: Volynskiy Business Automation<br>Email: info@volynskiybusiness.com<br>Phone: +972 058 512 1035<br>Address: Moshe Fliman St 4, Haifa, Israel"
+                }
+            }
+        };
 
-       // Current language variable
-       let currentLanguage = 'en';
+        // Current language variable
+        let currentLanguage = 'en';
 
-       // Detect system language
-       function detectSystemLanguage() {
-           const browserLang = navigator.language || navigator.userLanguage;
-           const langCode = browserLang.split('-')[0].toLowerCase();
-           
-           // Check if we support this language
-           if (translations[langCode]) {
-               return langCode;
-           }
-           
-           // Default to English if not supported
-           return 'en';
-       }
+        // Detect system language
+        function detectSystemLanguage() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            const langCode = browserLang.split('-')[0].toLowerCase();
 
-       // Apply translations with error handling
-       function applyTranslations(lang) {
-           try {
-               const translation = translations[lang];
-               if (!translation) {
-                   console.error(`Translation for language '${lang}' not found`);
-                   return false;
-               }
+            // Check if we support this language
+            if (translations[langCode]) {
+                return langCode;
+            }
 
-               // Update all elements with data-translate attribute
-               document.querySelectorAll('[data-translate]').forEach(element => {
-                   const key = element.getAttribute('data-translate');
-                   const value = getNestedValue(translation, key);
-                   if (value) {
-                       // Special handling for elements that need innerHTML (like footer.provider)
-                       if (key === 'footer.provider') {
-                           element.innerHTML = value;
-                       } else {
-                           element.textContent = value;
-                       }
-                   }
-               });
+            // Default to English if not supported
+            return 'en';
+        }
 
-               // Update placeholders
-               document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
-                   const key = element.getAttribute('data-translate-placeholder');
-                   const value = getNestedValue(translation, key);
-                   if (value) {
-                       element.placeholder = value;
-                   }
-               });
+        // Apply translations with error handling
+        function applyTranslations(lang) {
+            try {
+                const translation = translations[lang];
+                if (!translation) {
+                    console.error(`Translation for language '${lang}' not found`);
+                    return false;
+                }
 
-               // Update HTML lang attribute
-               document.documentElement.lang = lang;
+                // Update all elements with data-translate attribute
+                document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    const value = getNestedValue(translation, key);
+                    if (value) {
+                        // Special handling for elements that need innerHTML (like footer.provider)
+                        if (key === 'footer.provider') {
+                            element.innerHTML = value;
+                        } else {
+                            element.textContent = value;
+                        }
+                    }
+                });
 
-               // Update current language display
-               const langFlags = {
-                   'en': '🇺🇸 EN',
-                   'he': '🇮🇱 HE',
-                   'ar': '🇸🇦 AR',
-                   'ru': '🇷🇺 RU',
-                   'es': '🇪🇸 ES',
-                   'fr': '🇫🇷 FR',
-                   'de': '🇩🇪 DE'
-               };
-               
-               const currentLangElement = document.getElementById('currentLang');
-               if (currentLangElement) {
-                   currentLangElement.textContent = langFlags[lang] || '🌐 EN';
-               }
+                // Update placeholders
+                document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
+                    const key = element.getAttribute('data-translate-placeholder');
+                    const value = getNestedValue(translation, key);
+                    if (value) {
+                        element.placeholder = value;
+                    }
+                });
 
-               // Update active language option
-               document.querySelectorAll('.language-option').forEach(option => {
-                   option.classList.remove('active');
-                   if (option.getAttribute('data-lang') === lang) {
-                       option.classList.add('active');
-                   }
-               });
+                // Update HTML lang attribute
+                document.documentElement.lang = lang;
 
-               // Handle RTL languages
-               if (lang === 'he' || lang === 'ar') {
-                   document.body.style.direction = 'rtl';
-                   document.body.style.textAlign = 'right';
-               } else {
-                   document.body.style.direction = 'ltr';
-                   document.body.style.textAlign = 'left';
-               }
+                // Update current language display
+                const langFlags = {
+                    'en': 'EN',
+                    'he': 'HE',
+                    'ar': 'AR',
+                    'ru': 'RU',
+                    'es': 'ES',
+                    'fr': 'FR',
+                    'de': 'DE'
+                };
 
-               currentLanguage = lang;
-               localStorage.setItem('selectedLanguage', lang);
-               return true;
-           } catch (error) {
-               console.error('Error applying translations:', error);
-               return false;
-           }
-       }
+                const currentLangElement = document.getElementById('currentLang');
+                if (currentLangElement) {
+                    currentLangElement.textContent = langFlags[lang] || '🌐 EN';
+                }
 
-       // Helper function to get nested object values
-       function getNestedValue(obj, path) {
-           try {
-               return path.split('.').reduce((current, key) => current && current[key], obj);
-           } catch (error) {
-               console.error(`Error getting value for path '${path}':`, error);
-               return null;
-           }
-       }
+                // Update active language option
+                document.querySelectorAll('.language-option').forEach(option => {
+                    option.classList.remove('active');
+                    if (option.getAttribute('data-lang') === lang) {
+                        option.classList.add('active');
+                    }
+                });
 
-       // Initialize language system
-       function initializeLanguage() {
-           // Check for saved language preference
-           const savedLang = localStorage.getItem('selectedLanguage');
-           const systemLang = detectSystemLanguage();
-           const initialLang = savedLang || systemLang;
-           
-           // Apply translations with fallback to English if failed
-           if (!applyTranslations(initialLang)) {
-               applyTranslations('en');
-           }
-       }
+                // Handle RTL languages
+                if (lang === 'he' || lang === 'ar') {
+                    document.body.style.direction = 'rtl';
+                    document.body.style.textAlign = 'right';
+                } else {
+                    document.body.style.direction = 'ltr';
+                    document.body.style.textAlign = 'left';
+                }
 
-       // Language selector functionality
-       document.addEventListener('DOMContentLoaded', function() {
-           const languageBtn = document.getElementById('languageBtn');
-           const languageDropdown = document.getElementById('languageDropdown');
-           const languageOptions = document.querySelectorAll('.language-option');
+                currentLanguage = lang;
+                localStorage.setItem('selectedLanguage', lang);
+                return true;
+            } catch (error) {
+                console.error('Error applying translations:', error);
+                return false;
+            }
+        }
 
-           // Toggle language dropdown
-           languageBtn.addEventListener('click', function(e) {
-               e.stopPropagation();
-               languageDropdown.classList.toggle('active');
-           });
+        // Helper function to get nested object values
+        function getNestedValue(obj, path) {
+            try {
+                return path.split('.').reduce((current, key) => current && current[key], obj);
+            } catch (error) {
+                console.error(`Error getting value for path '${path}':`, error);
+                return null;
+            }
+        }
 
-           // Close dropdown when clicking outside
-           document.addEventListener('click', function() {
-               languageDropdown.classList.remove('active');
-           });
+        // Initialize language system
+        function initializeLanguage() {
+            // Check for saved language preference
+            const savedLang = localStorage.getItem('selectedLanguage');
+            const systemLang = detectSystemLanguage();
+            const initialLang = savedLang || systemLang;
 
-           // Language option selection
-           languageOptions.forEach(option => {
-               option.addEventListener('click', function(e) {
-                   e.preventDefault();
-                   const selectedLang = this.getAttribute('data-lang');
-                   applyTranslations(selectedLang);
-                   languageDropdown.classList.remove('active');
-               });
-           });
+            // Apply translations with fallback to English if failed
+            if (!applyTranslations(initialLang)) {
+                applyTranslations('en');
+            }
+        }
 
-           // Mobile menu functionality
-           const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-           const navLinks = document.querySelector('.nav-links');
+        // Language selector functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const languageBtn = document.getElementById('languageBtn');
+            const languageDropdown = document.getElementById('languageDropdown');
+            const languageOptions = document.querySelectorAll('.language-option');
 
-           mobileMenuToggle.addEventListener('click', function() {
-               this.classList.toggle('active');
-               navLinks.classList.toggle('active');
-           });
+            // Проверяем, что элементы найдены
+            if (!languageBtn || !languageDropdown) {
+                console.error('Language selector elements not found');
+                return;
+            }
 
-           // Close mobile menu when clicking on links
-           document.querySelectorAll('.nav-links a').forEach(link => {
-               link.addEventListener('click', function() {
-                   mobileMenuToggle.classList.remove('active');
-                   navLinks.classList.remove('active');
-               });
-           });
+            console.log('Language options found:', languageOptions.length); // Отладка
 
-           // Smooth scrolling for navigation links
-           document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-               anchor.addEventListener('click', function (e) {
-                   e.preventDefault();
-                   const target = document.querySelector(this.getAttribute('href'));
-                   if (target) {
-                       target.scrollIntoView({
-                           behavior: 'smooth',
-                           block: 'start'
-                       });
-                   }
-               });
-           });
+            // Toggle language dropdown
+            languageBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                e.preventDefault(); // Предотвращаем любые действия по умолчанию
 
-           // Form submission handling
-           const contactForm = document.getElementById('contactForm');
-           if (contactForm) {
-               contactForm.addEventListener('submit', function(e) {
-                   e.preventDefault();
-                   
-                   // Facebook Pixel tracking for form submission
-                   if (typeof fbq !== 'undefined') {
-                       fbq('track', 'Lead');
-                   }
-                   
-                   // Get current language for success message
-                   const successMessages = {
-                       'en': 'Thank you for your interest! We will contact you within 24 hours.',
-                       'he': 'תודה על העניין שלך! ניצור איתך קשר תוך 24 שעות.',
-                       'ar': 'شكراً لاهتمامك! سنتواصل معك خلال 24 ساعة.',
-                       'ru': 'Спасибо за ваш интерес! Мы свяжемся с вами в течение 24 часов.',
-                       'es': '¡Gracias por tu interés! Te contactaremos dentro de 24 horas.',
-                       'fr': 'Merci pour votre intérêt! Nous vous contacterons dans les 24 heures.',
-                       'de': 'Vielen Dank für Ihr Interesse! Wir werden Sie innerhalb von 24 Stunden kontaktieren.'
-                   };
-                   
-                   alert(successMessages[currentLanguage] || successMessages['en']);
-                   
-                   // Reset form
-                   this.reset();
-               });
-           }
+                const isActive = languageDropdown.classList.contains('active');
+                languageDropdown.classList.toggle('active');
 
-           // Add animation on scroll
-           const observerOptions = {
-               threshold: 0.1,
-               rootMargin: '0px 0px -50px 0px'
-           };
+                // Отладка
+                console.log('Dropdown toggled. Active:', !isActive);
+                console.log('Dropdown styles:', {
+                    opacity: window.getComputedStyle(languageDropdown).opacity,
+                    visibility: window.getComputedStyle(languageDropdown).visibility,
+                    display: window.getComputedStyle(languageDropdown).display
+                });
+            });
 
-           const observer = new IntersectionObserver(function(entries) {
-               entries.forEach(entry => {
-                   if (entry.isIntersecting) {
-                       entry.target.style.opacity = '1';
-                       entry.target.style.transform = 'translateY(0)';
-                   }
-               });
-           }, observerOptions);
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function (e) {
+                if (!languageBtn.contains(e.target) && !languageDropdown.contains(e.target)) {
+                    languageDropdown.classList.remove('active');
+                }
+            });
 
-           // Observe service cards and feature items
-           document.querySelectorAll('.service-card, .feature-item').forEach(el => {
-               el.style.opacity = '0';
-               el.style.transform = 'translateY(30px)';
-               el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-               observer.observe(el);
-           });
+            // Language option selection
+            languageOptions.forEach((option, index) => {
+                console.log(`Language option ${index}:`, option.textContent, option.getAttribute('data-lang')); // Отладка
 
-           // Initialize language system
-           initializeLanguage();
-       });
-   </script>
+                option.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const selectedLang = this.getAttribute('data-lang');
+                    console.log('Language selected:', selectedLang); // Отладка
+
+                    applyTranslations(selectedLang);
+                    languageDropdown.classList.remove('active');
+                });
+            });
+
+            // Mobile menu functionality
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            mobileMenuToggle.addEventListener('click', function () {
+                this.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on links
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Form submission handling
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+
+                    // Facebook Pixel tracking for form submission
+                    if (typeof fbq !== 'undefined') {
+                        fbq('track', 'Lead');
+                    }
+
+                    // Get current language for success message
+                    const successMessages = {
+                        'en': 'Thank you for your interest! We will contact you within 24 hours.',
+                        'he': 'תודה על העניין שלך! ניצור איתך קשר תוך 24 שעות.',
+                        'ar': 'شكراً لاهتمامك! سنتواصل معك خلال 24 ساعة.',
+                        'ru': 'Спасибо за ваш интерес! Мы свяжемся с вами в течение 24 часов.',
+                        'es': '¡Gracias por tu interés! Te contactaremos dentro de 24 horas.',
+                        'fr': 'Merci pour votre intérêt! Nous vous contacterons dans les 24 heures.',
+                        'de': 'Vielen Dank für Ihr Interesse! Wir werden Sie innerhalb von 24 Stunden kontaktieren.'
+                    };
+
+                    alert(successMessages[currentLanguage] || successMessages['en']);
+
+                    // Reset form
+                    this.reset();
+                });
+            }
+
+            // Add animation on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe service cards and feature items
+            document.querySelectorAll('.service-card, .feature-item').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+
+            // Initialize language system
+            initializeLanguage();
+        });
+    </script>
 </body>
+
 </html>
